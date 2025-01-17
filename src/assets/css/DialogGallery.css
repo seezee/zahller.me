@@ -1,0 +1,203 @@
+/* See main stylesheet for masonry layout */
+
+:root {
+  zed-dialog-gallery {
+    dialog{
+      --zed-shadow-color: var(--zed-shadow-color-modal);
+    }
+  }
+
+  &[data-theme='dark'] {
+    --zed-shadow-color-modal: 0deg 13% 0%;
+
+    zed-dialog-gallery {
+      dialog {
+        --zed-shadow-color: var(--zed-shadow-color-modal);
+      }
+    }
+  }
+}
+
+zed-dialog-gallery {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+  --zed-shadow-color-modal: 340deg 9% 49%;
+
+  img {
+    cursor: pointer;
+    box-shadow: var(--zed-shadow-elevation-med);
+    border-radius: var(--zed-radius-2x);
+   }
+
+  dialog {
+    /* Variables for animation;
+    see https://www.oidaisdes.org/native-dialog-and-popover.en/ */
+    --duration: 150ms;
+    --start-opacity: 0.5;
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+      --start-scale: scale(0.8);
+    }
+
+    pointer-events: none;
+    margin: auto;
+    background-color: var(--zed-color-textSecondary);
+    border: solid var(--border-thin) var(--zed-color-textPrimary);
+    border-radius: var(--zed-radius-2x);
+
+    /* Don't use logical property on image */
+    width: clamp(320px, calc(66vw + var(--s3)), calc(100vw - 2em - 6px));
+
+    /* End values for fade out. */
+    opacity: var(--start-opacity);
+    transform: var(--start-scale);
+    transition:
+      opacity var(--duration) var(--ease-out-1),
+      transform var(--duration) cubic-bezier(0, 0, 0.2, 1),
+      overlay var(--duration) allow-discrete,
+      display var(--duration) allow-discrete;
+
+    &::backdrop {
+      background-color: var(--zed-modal-background-color);
+      backdrop-filter: blur(16px);
+      /* End value for fade out. */
+      opacity: 0;
+      transition: opacity var(--duration),
+        overlay var(--duration) allow-discrete,
+        display var(--duration) allow-discrete;
+    }
+
+    &[open] {
+      pointer-events: inherit;
+      /* End values for fade in; start values for fade out. */
+      opacity: 1;
+      transform: scale(1);
+
+      @starting-style {
+        /* Start values vor fade in. */
+        opacity: var(--start-opacity);
+        transform: var(--start-scale);
+      }
+
+      &::backdrop {
+        /* End value for fade in; start value for fade out. */
+        opacity: 1;
+      }
+    }
+
+    img {
+      box-shadow: var(--zed-shadow-elevation-med);
+
+      &.current {
+        filter: grayscale(.9);
+        opacity: .66;
+        outline:  var(--zed-color-secondary-300) dotted var(--s-5);
+
+      }
+
+      &:focus-visible {
+        outline: var(--zed-color-secondary-300) solid var(--s-5);
+      }
+
+      &:not(#current) {
+        border-radius: var(--zed-radius-2x);
+      }
+
+      &#current {
+        border: var(--s1) solid var(--zed-photo-border-color);
+      }
+    }
+
+
+
+    .gallery--img_main .gallery--thumbs,
+    .gallery--thumbs img {
+      width: 100%;
+    }
+
+    .gallery--thumbs {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: var(--s-2);
+
+      &.gallery--thumbs_3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.gallery--thumbs_4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.gallery--thumbs_5 {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      &.gallery--thumbs_6 {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      &.gallery--thumbs_7 {
+        grid-template-columns: repeat(7, 1fr);
+      }
+
+      &.gallery--thumbs_8 {
+        grid-template-columns: repeat(8, 1fr);
+      }
+
+      &.gallery--thumbs_9 {
+        grid-template-columns: repeat(9, 1fr);
+      }
+
+      &.gallery--thumbs_10 {
+        grid-template-columns: repeat(10, 1fr);
+      }
+
+      &.gallery--thumbs_11 {
+        grid-template-columns: repeat(11, 1fr);
+      }
+
+      &.gallery--thumbs_12 {
+        grid-template-columns: repeat(12, 1fr);
+      }
+    }
+
+    .gallery--thumbs img {
+      cursor: pointer;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    /* Fade in animation */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn var(--fade-time) var(--ease-in-1) 1 forwards;
+    }
+
+    /* Media Queries */
+    @media(max-width: 600px) {
+      .gallery--thumbs {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .gallery--button-container {
+      display: flex;
+      justify-content: center;
+      align-content: space-around;
+    }
+  }
+}
+
+/* This starting-style rule cannot be nested inside the above selector because the nesting selector cannot represent pseudo-elements. */
+@starting-style {
+  zed-dialog-gallery dialog[open]::backdrop {
+    /* Start value for fade in. */
+    opacity: 0;
+  }
+}

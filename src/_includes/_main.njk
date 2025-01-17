@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+---
+
+<main id="main">
+  <stack-l>
+    <article class="post" data-pagefind-body>
+      <stack-l>
+        {{ content | safe }}
+      </stack-l>
+    </article>
+    {% include "_pagination.njk" %}
+  </stack-l>
+</main>

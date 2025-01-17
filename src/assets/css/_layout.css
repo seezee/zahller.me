@@ -1,0 +1,370 @@
+/**
+* Layout
+*
+* 1. noscript
+* 2. #skip-link
+* 3. Theme toggle
+* 4. #nav-primary-wrapper, #main-wrapper
+* 5. .masonry
+* 6. Columns (.col-2, .col-3, .col-4, .col-5)
+* 7. <dd> styles: dd+br
+* 8. #zed (footer icon)
+*/
+
+/* No script */
+noscript div {
+  inline-size: fit-content;
+  max-inline-size: 100ch;
+  margin-inline: auto;
+  padding: var(--s1);
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #fff;
+  background-color: oklch(30% var(--zed-alert-color-chroma) 19.75);
+
+  svg {
+    display: inline-block;
+    margin-inline-end: .5ch;
+    margin-block-start: calc(1ex - 1cap);
+
+    vertical-align: middle;
+
+    fill: #fff;
+  }
+}
+
+/* #skip-link */
+#skip-link {
+  inset-block-start: var(--s-5);
+}
+
+#wrapper {
+
+  & stack-l {
+    block-size: 100%;
+  }
+
+  padding-inline: var(--s5);
+  padding-block: var(--s-5);
+
+  background-color: var(--zed-color-figureBG);
+}
+
+/* Theme toggle based on
+https://web.dev/articles/building/a-theme-switch-component */
+#theme-toggle {
+  margin-block-start: var(--toggle-margin-top);
+  padding: 0;
+  inline-size: var(--toggle-size);
+  block-size: var(--toggle-size);
+  min-inline-size: var(--toggle-min-size);
+  min-block-size: var(--toggle-min-size);
+  aspect-ratio: 1;
+
+  -webkit-tap-highlight-color: transparent;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  outline-offset: 5px;
+  cursor: pointer;
+
+  touch-action: manipulation;
+
+  > svg {
+    inline-size: 100%;
+    block-size: 100%;
+
+    stroke-linecap: round;
+  }
+
+  &:hover > .sun-and-moon > :is(.moon,.sun) {
+    fill: var(--zed-color-iconFillHover);
+  }
+
+  &:hover .sun-and-moon >.sun-beams {
+    stroke: var(--zed-color-iconFillHover);
+  }
+}
+
+.sun-and-moon {
+
+  > :is(.moon,.sun,.sun-beams) {
+    transform-origin: center center;
+  }
+
+  > :is(.moon,.sun) {
+    fill: var(--zed-color-textPrimary);
+  }
+
+  > .sun-beams {
+    stroke: var(--zed-color-textPrimary);
+    stroke-width: 2px;
+  }
+}
+
+[data-theme='dark'] .sun-and-moon {
+  > .sun {
+    transform: scale(1.75);
+  }
+
+  > .sun-beams {
+    opacity: 0;
+  }
+
+  > .moon > circle {
+    transform: translate(-7px);
+
+    @supports (cx: 1px) {
+      transform: translateX(0);
+      cx: 17px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sun-and-moon {
+    > .sun {
+      transition: transform .5s var(--ease-elastic-3) .5s;
+    }
+
+    > .sun-beams {
+      transition: transform .5s var(--ease-elastic-4), opacity .5s var(--ease-3) .5s;
+    }
+
+    .moon > circle {
+      transition: cx .25s var(--ease-out-5) .5s;
+    }
+  }
+
+  [data-theme='dark'] .sun-and-moon {
+    > .sun {
+      transition: transform .25s var(--ease-out-5) .5s;
+    }
+
+    > .sun-beams {
+      transform: rotate(-25deg);
+      transition-duration: .15s;
+    }
+
+    > .moon > circle {
+      transition-delay: .25s;
+      transition-duration: .5s;
+    }
+  }
+}
+
+/* #nav-primary-wrapper, #main-wrapper */
+#nav-primary-wrapper {
+  padding-block-end: var(--s1);
+
+  border-block-end: 1px solid var(--zed-color-textPrimary);
+}
+
+#main-wrapper {
+  inline-size: 100%;
+  flex: 1;
+}
+
+/**
+ * Masonry layout
+ *
+ * This code may need different syntax when masonry ships to browsers;
+ * see https://github.com/w3c/csswg-drafts/issues/9041 and also commented
+ * example code below
+ */
+ .masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--zed-masonry-width));
+  grid-gap: var(--zed-masonry-gap);
+  justify-content: center;
+  padding: var(--zed-masonry-gap);
+
+  /* @supports (grid-template-rows: masonry) { */
+    grid-template-rows: masonry;
+  /* } */
+
+  @supports (display: masonry) { /* Alternate syntax. */
+    display: masonry;
+    masonry-template-tracks: repeat(auto-fit, var(--zed-masonry-width));
+    gap: var(--zed-masonry-gap);
+  }
+
+  > * {
+    width: var(--zed-masonry-width);
+  }
+}
+
+/*
+* Masonry syntax after feature ships to browsers:
+*
+* `display: masonry`, fall back to Flexbox
+*
+* All of the rules for this class are in the same place
+*
+* .masonry {
+*   display: flex;
+*   flex-wrap: wrap;
+*   // The following lines will be ignored by browsers that don't understand
+*   // masonry and applied by browsers that understand masonry, overriding the
+*   // previous lines
+*   display: masonry;
+*   masonry-template: repeat(auto-fill, auto);
+* }
+*
+* Masonry as part of Grid, fall back to Flexbox
+*
+* Rules for the class are split across different layers/queries, resulting in
+* bulkier CSS and making it less efficient to update
+*
+* Media queries do not increase specificity, so make sure fallbacks are
+* de-prioritized
+*
+* @layer fallbacks {
+*   .masonry {
+*      display: flex;
+*      flex-wrap: wrap;
+*   }
+* }
+*
+* @supports (grid-template-rows: masonry) {
+*  .masonry {
+*      display: grid;
+*      grid-template-rows: masonry;
+*  }
+* } */
+
+/* Columns */
+.col-2,
+.col-3,
+.col-4,
+.col-5 {
+  columns: 1;
+  column-gap: var(--s-1);
+}
+
+div.col-2,
+div.col-3,
+div.col-4,
+div.col-5 {
+  margin-block-end: var(--s-1);
+}
+
+@media screen and (min-width: 62.25rem) {
+  .col-2 {
+    columns: 2;
+  }
+
+  .col-3 {
+    columns: 3;
+  }
+
+  .col-4 {
+    columns: 4;
+  }
+
+  .col-5 {
+    columns: 5;
+  }
+}
+
+[data-i='Stack-var(--s1)false'] > dd+br {
+  margin-block-start: 0;
+  }
+
+/* #zed-footer-icon */
+#zed-footer-icon {
+  margin-block: var(--s1);
+}
+
+/* Resume list */
+
+.entrylist,
+.entrylist__item {
+  list-style: none;
+}
+
+.entrylist {
+  position: relative;
+  padding-left: 1rem;
+
+  &::before{
+    content: '';
+    display: block;
+    inline-size: 1px;
+    background: #818a91;
+    background: linear-gradient(to top, var(--zed-color-textSecondary) 0, var(--zed-color-textPrimary) 100px, var(--zed-color-textPrimary) 100%);
+    position: absolute;
+    inset-block-start: 1rem;
+    inset-inline-start: 1rem;
+    inset-block-end: 0;
+  }
+}
+
+.entrylist__item {
+  position: relative;
+  padding-inline-start: 2rem;
+
+  &::before {
+    content: '';
+    display: block;
+    inline-size: .625rem;
+    block-size: .625rem;
+    border-radius: 50%;
+    background-color: var(--zed-color-textPrimary);
+    position: absolute;
+    inset-block-start: 2.25rem;
+    inset-inline-start: 0;
+    transform: translate(-50%, 0);
+  }
+
+  &:first-of-type::before {
+    inset-block-start: 1rem;
+  }
+}
+
+.entry__header {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-block-end: var(--s-0);
+  }
+}
+
+.repolist,
+.repolist__item {
+  list-style-type: none;
+  margin-block-end: var(--s-1);
+}
+
+.repolist__title,
+.vcard__contact {
+font-size: var(--zed-font-size--1);
+font-family: var(--zed-font-default);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media not print {
+  .utl-print-only {
+    display: none;
+  }
+}
+
+.badge img {
+  min-inline-size: 20ch;
+}
+
+.vcard__contact-item:not(:last-of-type) {
+  margin-inline-end: var(--s1);
+}
+
+.vcard__link-text {
+  word-break: keep-all;
+  white-space: nowrap;
+}

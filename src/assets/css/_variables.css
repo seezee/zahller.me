@@ -1,0 +1,253 @@
+/**
+ * Variables CSS
+ */
+
+@property --zed-color-primary-900 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: currentColor;
+}
+
+@property --ratio {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 1.4;
+}
+
+@property --zed-alert-color-lightness {
+syntax: '<percent>';
+inherits: false;
+initial-value: 95%;
+}
+
+@property --zed-alert-color-chroma {
+syntax: '<number>';
+inherits: false;
+initial-value: 0.1;
+}
+
+:root {
+
+  --zed-size-textDefault: 1.25em;
+
+  --zed-c-p-50:  95% 0 0; /* Default dark theme */
+  --zed-c-p-100: 90% 0 0;
+  --zed-c-p-200: 80% 0 0;
+  --zed-c-p-300: 70% 0 0;
+  --zed-c-p-400: 60% 0 0;
+  --zed-c-p-500: 50% 0 0;
+  --zed-c-p-600: 40% 0 0;
+  --zed-c-p-700: 30% 0 0;
+  --zed-c-p-800: 20% 0 0;
+  --zed-c-p-900: 10% 0 0; /* Default light theme */
+
+  --zed-color-primary-50:  oklch(var(--zed-c-p-50)); /* Default dark theme */
+  --zed-color-primary-100: oklch(var(--zed-c-p-100));
+  --zed-color-primary-200: oklch(var(--zed-c-p-200));
+  --zed-color-primary-300: oklch(var(--zed-c-p-300));
+  --zed-color-primary-400: oklch(var(--zed-c-p-400));
+  --zed-color-primary-500: oklch(var(--zed-c-p-500));
+  --zed-color-primary-600: oklch(var(--zed-c-p-600));
+  --zed-color-primary-700: oklch(var(--zed-c-p-700));
+  --zed-color-primary-800: oklch(var(--zed-c-p-800));
+  --zed-color-primary-900: oklch(var(--zed-c-p-900)); /* Default light theme */
+
+  --zed-c-s-50:  95% 0 64.47;
+  --zed-c-s-100: 90% 0 64.47;
+  --zed-c-s-200: 80% 0 64.47;
+  --zed-c-s-300: 70% 0 64.47;
+  --zed-c-s-400: 60% 0 64.47;
+  --zed-c-s-500: 50% 0 64.47;
+  --zed-c-s-600: 40% 0 64.47;
+  --zed-c-s-700: 30% 0 64.47;
+  --zed-c-s-800: 20% 0 64.47;
+  --zed-c-s-900: 10% 0 64.47;
+
+  --zed-color-secondary-50:  oklch(var(--zed-c-s-50));
+  --zed-color-secondary-100: oklch(var(--zed-c-s-100));
+  --zed-color-secondary-200: oklch(var(--zed-c-s-200));
+  --zed-color-secondary-300: oklch(var(--zed-c-s-300));
+  --zed-color-secondary-400: oklch(var(--zed-c-s-400));
+  --zed-color-secondary-500: oklch(var(--zed-c-s-500));
+  --zed-color-secondary-600: oklch(var(--zed-c-s-600));
+  --zed-color-secondary-700: oklch(var(--zed-c-s-700));
+  --zed-color-secondary-800: oklch(var(--zed-c-s-800));
+  --zed-color-secondary-900: oklch(var(--zed-c-s-900));
+
+  --zed-color-textPrimary: var(--zed-color-primary-900);
+  --zed-color-textSecondary: var(--zed-color-secondary-50);
+
+  --zed-color-hoverPrimary: var(--zed-color-primary-700);
+  --zed-color-hoverSecondary: var(--zed-color-primary-200);
+
+  --zed-color-iconFillHover: var(--zed-color-hoverPrimary);
+
+  --zed-color-figureBG: oklch(var(--zed-c-p-100));
+  --zed-color-imgBG: oklch(var(--zed-c-p-50));
+
+  --zed-alert-color-lightness: 95%;
+  --zed-alert-color-chroma: 0.1;
+
+  --zed-alert-color-background:
+    oklch(
+      var(--zed-alert-color-lightness)
+      .015
+      221.42
+    );
+
+    --zed-alert-color-tip-background:
+    oklch(
+      var(--zed-alert-color-lightness)
+      var(--zed-alert-color-chroma)
+      145.36
+    );
+
+    --zed-alert-color-info-background:
+    oklch(
+      var(--zed-alert-color-lightness)
+      var(--zed-alert-color-chroma)
+      221.42
+    );
+
+    --zed-alert-color-warning-background:
+    oklch(
+      var(--zed-alert-color-lightness)
+      var(--zed-alert-color-chroma)
+      89.21
+    );
+
+    --zed-alert-color-danger-background:
+    oklch(
+      var(--zed-alert-color-lightness)
+      var(--zed-alert-color-chroma)
+      19.75
+    );
+
+  --zed-alert-border-color: color-mix(in srgb, var(--zed-alert-color-background) 75%, #000);
+  --zed-alert-tip-border-color: color-mix(in srgb, var(--zed-alert-color-tip-background) 75%, #000);
+  --zed-alert-info-border-color: color-mix(in srgb, var(--zed-alert-color-info-background) 75%, #000);
+  --zed-alert-warning-border-color: color-mix(in srgb, var(--zed-alert-color-warning-background) 75%, #000);
+  --zed-alert-danger-border-color: color-mix(in srgb, var(--zed-alert-color-danger-background) 75%, #000);
+
+  --zed-alert-border-width: .325em;
+  --zed-radius-1x: .2em;
+  --zed-radius-2x: .4em;
+
+  --zed-global-shadow-color: oklch(0% 0 0 / 15%);
+  --zed-modal-background-color: oklch(0% 0 0 / 50%);
+
+  --zed-nav-current-color: var(--zed-color-secondary-700);
+
+  --zed-photo-border-color: oklch(98.08% 3.5594404384177905e-8 106.37411429114086);
+
+  /* Shodows */
+  --zed-shadow-color: 347deg 5% 38%;
+  --zed-shadow-elevation-low:
+    0.3px 0.5px 0.7px hsl(var(--zed-shadow-color) / 0.45),
+    0.4px 0.9px 1.1px -1.2px hsl(var(--zed-shadow-color) / 0.45),
+    1.2px 2.3px 2.9px -2.5px hsl(var(--zed-shadow-color) / 0.45);
+  --zed-shadow-elevation-med:
+    0.3px 0.5px 0.7px hsl(var(--zed-shadow-color) / 0.47),
+    0.9px 1.8px 2.3px -0.8px hsl(var(--zed-shadow-color) / 0.47),
+    2.3px 4.7px 5.9px -1.7px hsl(var(--zed-shadow-color) / 0.47),
+    5.8px 11.5px 14.5px -2.5px hsl(var(--zed-shadow-color) / 0.47);
+  --zed-shadow-elevation-high:
+    0.3px 0.5px 0.7px hsl(var(--zed-shadow-color) / 0.44),
+    1.8px 3.6px 4.5px -0.4px hsl(var(--zed-shadow-color) / 0.44),
+    3.5px 6.9px 8.7px -0.7px hsl(var(--zed-shadow-color) / 0.44),
+    5.8px 11.5px 14.5px -1.1px hsl(var(--zed-shadow-color) / 0.44),
+    9.2px 18.5px 23.2px -1.4px hsl(var(--zed-shadow-color) / 0.44),
+    14.5px 28.9px 36.4px -1.8px hsl(var(--zed-shadow-color) / 0.44),
+    22px 44.1px 55.4px -2.1px hsl(var(--zed-shadow-color) / 0.44),
+    32.5px 65px 81.8px -2.5px hsl(var(--zed-shadow-color) / 0.44);
+
+  &[data-theme='dark'] {
+    @media not print {
+      --zed-c-p-50:  10% 0 0;
+      --zed-c-p-100: 20% 0 0;
+      --zed-c-p-200: 30% 0 0;
+      --zed-c-p-300: 40% 0 0;
+      --zed-c-p-400: 50% 0 0;
+      --zed-c-p-500: 60% 0 0;
+      --zed-c-p-600: 70% 0 0;
+      --zed-c-p-700: 80% 0 0;
+      --zed-c-p-800: 90% 0 0;
+      --zed-c-p-900: 95% 0 0; /* Primary */
+
+      --zed-c-s-50:  10% 0 64.47;
+      --zed-c-s-100: 20% 0 64.47;
+      --zed-c-s-200: 30% 0 64.47;
+      --zed-c-s-300: 40% 0 64.47;
+      --zed-c-s-400: 50% 0 64.47;
+      --zed-c-s-500: 60% 0 64.47;
+      --zed-c-s-600: 70% 0 64.47;
+      --zed-c-s-700: 80% 0 64.47;
+      --zed-c-s-800: 90% 0 64.47;
+      --zed-c-s-900: 95% 0 64.47;
+
+      --zed-alert-color-lightness: 30%;
+
+      --zed-shadow-color: 352deg 12% 6%;
+    }
+  }
+
+  --ratio: 1.4;
+  --s-5: clamp(0.33rem,0.39rem + -0.29vw,0.18rem);
+  --s-4: clamp(0.41rem,0.47rem + -0.31vw,0.25rem);
+  --s-3: clamp(0.51rem,0.57rem + -0.31vw,0.35rem);
+  --s-2: clamp(0.64rem,0.69rem + -0.27vw,0.5rem);
+  --s-1: clamp(0.8rem,0.84rem + -0.18vw,0.71rem);
+  --s0: clamp(1rem,1rem + 0vw,1rem);
+  --s1: clamp(1.25rem,1.19rem + 0.32vw,1.41rem);
+  --s2: clamp(1.56rem,1.39rem + 0.85vw,2rem);
+  --s3: clamp(1.95rem,1.61rem + 1.7vw,2.83rem);
+  --s4: clamp(2.44rem,1.83rem + 3.04vw,4rem);
+  --s5: clamp(3.05rem,2.04rem + 5.07vw,5.65rem);
+  --measure: 65ch;
+  --line-height: var(--ratio);
+  --line-height-small: calc(0.8*var(--ratio));
+  --border-thin: var(--s-5);
+  --border-thick: var(--s-2);
+
+  --zed-font-default: system-ui, sans-serif;
+  --zed-font-serif: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  --zed-font-mono: ui-monospace, Cousine, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+  --zed-font-size--2: clamp(0.57rem, 0.11cqi + 0.54rem, 0.63rem);
+  --zed-font-size--1: clamp(0.75rem, 0.24cqi + 0.69rem, 0.88rem);
+  --zed-font-size-0: clamp(1rem, 0.45cqi + 0.89rem, 1.25rem);
+  --zed-font-size-1: clamp(1.33rem, 0.8cqi + 1.13rem, 1.77rem);
+  --zed-font-size-2: clamp(1.77rem, 1.33cqi + 1.44rem, 2.5rem);
+  --zed-font-size-3: clamp(2.35rem, 2.15cqi + 1.82rem, 3.53rem);
+  --zed-font-size-4: clamp(3.13rem, 3.4cqi + 2.28rem, 5rem);
+  --zed-font-size-5: clamp(4.16rem, 5.28cqi + 2.84rem, 7.07rem);
+
+  --zed-masonry-width: min(13rem, 100%);
+  --zed-masonry-gap: var(--s-2);
+
+  interpolate-size: allow-keywords;
+
+}
+
+@media (prefers-reduced-transparency: no-preference) {
+  :root {
+    --zed-color-figureBG: oklch(var(--zed-c-p-100) / .5);
+    --zed-color-imgBG: oklch(var(--zed-c-p-50) / .5);
+
+    &[data-theme='dark'] {
+      --zed-color-figureBG: oklch(var(--zed-c-p-100) / .5);
+      --zed-color-imgBG: oklch(var(--zed-c-p-50) / .5);
+    }
+  }
+}
+
+#theme-toggle {
+  --toggle-size: 1rem;
+  --toggle-min-size: 24px; /* Minimum WCAG target size */
+  --toggle-margin-top: .2em;
+
+  @media screen and (pointer: coarse) {
+    --toggle-size: 1.5rem;
+    --toggle-margin-top: unset;
+  }
+}

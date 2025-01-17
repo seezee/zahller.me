@@ -1,0 +1,39 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Grab title from the page data and dump it here -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><!-- `sizes="48x48"` tricks Chromium browsers into using the SVG. Safari sitll doesn't support SVG; it will use the .ico -->
+  <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <!-- Must load in head or masonry layout fails -->
+  <script src="/assets/js/index.js" type="module"></script>
+  <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "where": {
+            "href_matches": "/*"
+          },
+          "eagerness": "eager"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --zed-external-icon: url(/assets/images/icons/external.svg);
+      --zed-list-marker: url(/assets/images/icons/starfish.svg);
+      --zed-details-marker: url(/assets/images/icons/chevron-right.svg);
+    }
+
+    [data-theme='dark'] {
+        --zed-external-icon: url(/assets/images/icons/external-dark.svg);
+        --zed-list-marker: url(/assets/images/icons/starfish-dark.svg);
+        --zed-details-marker: url(/assets/images/icons/chevron-right-dark.svg);
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <meta property="og:site_name" content="Tiny Paper Umbrella">
+  {% seo "" %}
+</head>

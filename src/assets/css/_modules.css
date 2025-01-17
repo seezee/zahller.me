@@ -1,0 +1,76 @@
+/**
+ * 1. Footnotes
+ * 2. Icons
+ * 3. Miscellaneous govuk plugin styles
+ */
+
+/* Footnotes */
+[aria-describedby='footnotes-label'] {
+  text-decoration: none;
+
+  &::before {
+    content: '[';
+  }
+
+  &::after {
+    content: ']';
+  }
+}
+
+[href^='#fnref:'] {
+  text-decoration: none;
+}
+
+.app-footnotes-list {
+  p:not(:last-child),
+  li {
+    margin-block-end: var(--s1);
+  }
+}
+
+/* Icons */
+.icon {
+  width: 1cap;
+  height: 1cap;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.with-icon .icon {
+  margin-inline-end: .5ch;
+}
+
+/* Miscellaneous govuk plugin styles */
+.govuk-section-break { /* <hr> + footnote(s) */
+  margin-block-end: var(--s1);
+}
+
+.govuk-body {
+  break-inside: avoid;
+}
+
+.govuk-link {
+  break-before:avoid;
+}
+
+.app-link--heading.govuk-link { /* Linked headings */
+  text-decoration: none;
+
+  /* Prevent layout shift on hover */
+  &:after {
+    display: inline-block;
+    min-inline-size: 2ch;
+
+    white-space: pre;
+
+    content: '\0020\0020'; /* double-space */
+  }
+
+  &:hover:after,
+  &:focus:after {
+    content: '\0020#'; /* space + octothorpe */
+  }
+}

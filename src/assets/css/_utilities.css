@@ -1,0 +1,117 @@
+/**
+ * Utilities CSS
+ *
+ * 1. .alignleft, .alignright, .aligncenter
+ * 2. .no-break
+ * 3. .sr-only,.keywords, .govuk-visually-hidden
+ * 4. .frac
+ * 5. .small-caps
+ * 6. .short-work
+ * 7.  Print styles
+ */
+
+ /* .alignleft, .alignright, .aligncenter */
+.alignleft {
+  text-align: start;
+}
+
+.alignright {
+  text-align:end
+}
+
+.aligncenter {
+  text-align: center;
+  text-wrap: balance;
+}
+
+/* .no-break */
+.no-break {
+  break-inside: avoid;
+}
+
+/* .sr-only, .keywords, .govuk-visually-hidden */
+.sr-only,
+.keywords,
+.govuk-visually-hidden {
+  position: absolute;
+  display: inline-block;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+
+  border-width: 0;
+}
+
+/* .frac */
+.frac sup,
+.frac sub {
+  font-size: .55rem;
+}
+
+.frac sub {
+  display: inline-block;
+  position: relative;
+  inset-inline-start: -.1rem;
+  inset-block-start: -.2rem;
+}
+
+table .frac {
+  display: inline-block;
+  position: relative;
+  inset-inline-start: -.25rem;
+  margin-inline-end: -.6rem;
+  font-weight: 600;
+
+  sup {
+    display: inline-block;
+    position: relative;
+    inset-inline-end: -.25rem;
+  }
+
+  sub {
+    inset-inline-start: -.25rem;
+  }
+}
+
+/* .small-caps */
+.small-caps {
+  font-variant:  all-small-caps;
+  letter-spacing: .05ch;
+}
+
+/* .short-work */
+.short-work {
+  font-style: normal;
+
+  quotes: "\201C" "\201D" "\2018" "\2019";
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+.with-icon {
+  align-items: center;
+}
+
+.icon {
+  width: 1.5cap;
+  height: 1.5cap;
+}
+
+/* Print styles */
+
+@media print {
+  header, footer {
+    display: none;
+  }
+}

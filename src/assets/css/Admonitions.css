@@ -1,0 +1,46 @@
+.admonition {
+  padding: var(--s1) var(--s2);
+
+  background-color: var(--zed-alert-color-background);
+  border: 0 solid var(--zed-alert-border-color);
+  border-left-width: var(--zed-alert-border-width);
+  border-radius: var(--zed-radius-2x);
+  box-shadow: var(--zed-global-shadow-color);
+}
+
+.admonition.tip {
+  background-color: var(--zed-alert-color-tip-background);
+  border-color: var(--zed-alert-tip-border-color);
+}
+
+.admonition.info {
+  background-color: var(--zed-alert-color-info-background);
+  border-color: var(--zed-alert-info-border-color);
+}
+
+.admonition.warning {
+  background-color: var(--zed-alert-color-warning-background);
+  border-color: var(--zed-alert-warning-border-color);
+}
+
+.admonition.danger {
+  background-color: var(--zed-alert-color-danger-background);
+  border-color: var(--zed-alert-danger-border-color);
+}
+
+.admonition-heading {
+  font-weight: 700;
+  font-size: var(--zed-font-size-1);
+  letter-spacing: .05ch;
+  font-variant: all-small-caps;
+}
+
+.admonition-icon {
+  display: inline-block;
+  position: relative;
+  height: auto; /* Use width & height, not logical properties, on images */
+  width: 1.3em;
+  inset-block-end: .1rem;
+  margin-inline-end: .5ch;
+  vertical-align: middle;
+}

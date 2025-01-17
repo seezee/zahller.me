@@ -1,0 +1,41 @@
+/**
+ * 1. fadeout & fadein animation for hiding & showing stuff
+ * 2. :focus-visible styles
+ */
+
+@keyframes fadeout {
+  from { display: block; max-height: 10vh;}
+  to { opacity: 0; max-height: 0;}
+}
+
+/* Hiding and showing */
+@keyframes fadein {
+  from { opacity: 0; max-height: 0 }
+  to { opacity: 1; max-height: 10vh;}
+}
+
+.hide {
+  display: none;
+
+  animation: fadeout 0ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hide {
+    animation: fadeout 200ms var(--ease-out-1);
+  }
+  .show {
+    animation: fadein 200ms var(--ease-in-1);
+  }
+}
+
+.show {
+  display: block;
+
+  animation: fadein 0ms;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: var(--zed-color-secondary-300) auto 1px;
+}

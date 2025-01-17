@@ -1,0 +1,75 @@
+<footer role="contentinfo">
+  <hr />
+  <cluster-l justify="space-between" align="center">
+    <cluster-l justify="flex-start">
+      <p>Copyright &copy; 2025{{ helpers.currentYear() | safe }} Chris J. Zähller. All rights reserved.</p>
+    </cluster-l>
+    <div id="starfish">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="60px" id="zed-footer-icon"><path fill="currentColor" d="M31.777 108.239H20.689c-.864 0-1.008-2.016-1.008-2.016 0-1.44 5.04-8.928 8.352-13.392A6502.241 6502.241 0 0 0 50.352 62.16H34.657c-1.008 0-2.016-.864-2.016-1.728 0-1.296 1.584-3.456 3.456-3.456h18c7.2-10.224 14.4-20.592 23.184-33.839.288-.432.576-.72.576-1.152 0-.576-.576-1.008-2.736-1.152a823.834 823.834 0 0 0-21.023-.288c-5.616 0-11.088 0-14.688.288-4.608.288-10.656 2.88-13.248 9.936-.72 1.728-1.872 4.608-4.032 4.608-.864 0-1.296-.72-1.296-1.584 0-1.152.576-2.736 1.008-3.888 1.008-3.024 3.312-9.936 3.888-15.984.144-2.16 1.44-2.448 2.16-2.448s2.16.864 3.6 2.016c1.152.864 6.336 1.152 10.512 1.152 7.488.144 14.399.144 20.879.144 11.952 0 22.608-.144 33.264-.432.864 0 2.16 1.872 1.584 2.592l-8.784 11.664c-8.063 10.943-14.688 19.728-20.879 28.367h16.848c.864 0 1.872.864 1.872 1.728 0 1.44-2.304 3.456-4.464 3.456h-18C56.69 72.816 49.346 83.616 40.275 97.727c-.288.432-.432 1.152-.432 1.728 0 1.152.576 2.304 1.584 2.448 4.176.432 9.936.72 16.272.72 6.479 0 13.536-.288 20.303-.72 6.912-.576 13.824-5.04 17.856-14.544.432-1.152 1.728-3.024 3.168-3.024.864 0 1.296.576 1.296 1.872 0 1.584-3.744 16.416-5.328 19.872-.576 1.152-1.152 2.448-2.592 2.448-16.416 0-30.671-.432-43.487-.432-5.76 0-11.664.144-17.135.144Z"/></svg>
+    </div>
+    <nav id="nav-secondary" class="header-footer">
+      <cluster-l role="list" justify="flex-start" space="var(--s-1)">
+      <div role="listitem"><a href="/contact/">Contact</a></div>
+      <div role="listitem"><a href="/legal/terms-of-use/">Terms of Use</a></div>
+      <div role="listitem"><a href="/legal/privacy/">Privacy</a></div>
+      </cluster-l>
+    </nav>
+  </cluster-l>
+  <!-- Web components, including Every Layout -->
+  <!-- Load only if needed -->
+  <script>
+    if (document.querySelector('zed-callout')) {
+      import('/assets/js/Admonition.js');
+    };
+    if (document.querySelector('box-l')) {
+      import('/assets/js/Box.js');
+    };
+    if (document.querySelector('center-l')) {
+      import('/assets/js/Center.js');
+    };
+    if (document.querySelector('cluster-l')) {
+      import('/assets/js/Cluster.js');
+    };
+    if (document.querySelector('container-l')) {
+      import('/assets/js/Container.js');
+    };
+    if (document.querySelector('cover-l')) {
+      import('/assets/js/Cover.js');
+    };
+    if (document.querySelector('zed-dialog-img')) {
+      import('/assets/js/DialogImage.js');
+    };
+    if (document.querySelector('frame-l')) {
+      import('/assets/js/Frame.js');
+    };
+    if (document.querySelector('grid-l')) {
+      import('/assets/js/Grid.js');
+    };
+    if (document.querySelector('icon-l')) {
+      import('/assets/js/Icon.js');
+    };
+    if (document.querySelector('imposter-l')) {
+      import('/assets/js/Imposter.js');
+    };
+    if (document.querySelector('reel-l')) {
+      import('/assets/js/Reel.js');
+    };
+    if (document.querySelector('sidebar-l')) {
+      import('/assets/js/Sidebar.js');
+    };
+    if (document.querySelector('stack-l')) {
+      import('/assets/js/Stack.js');
+    };
+    if (document.querySelector('switcher-l')) {
+      import('/assets/js/Switcher.js');
+    };
+  </script>
+  {% set js %}
+    <!-- Inline as many scripts as you like -->
+    <!-- Capture the JS content as a Nunjucks variable -->
+    {% include "js/emailSec.js" %}
+  {% endset %}
+  <!-- Feed it through our Terser `jsmin` filter to minify -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script></footer>
