@@ -44,25 +44,6 @@ export default async function(eleventyConfig) {
 
   const {EleventyRenderPlugin} = await import('@11ty/eleventy');
 
-  // Pagefind config; runs AFTER build
-  eleventyConfig.on('eleventy.after', async function ({ dir }) {
-    const inputPath = dir.output;
-    const outputPath = path.join(dir.output, 'pagefind');
-
-    console.log('Creating Pagefind index of %s', inputPath);
-
-    const pagefind = await import('pagefind');
-    const { index } = await pagefind.createIndex();
-    const { page_count } = await index.addDirectory({ path: inputPath });
-    await index.writeFiles({ outputPath });
-
-    console.log(
-      'Created Pagefind index of %i pages in %s',
-      page_count,
-      outputPath
-    );
-  });
-
   // Require layout file extensions; see
   // https://www.11ty.dev/docs/layouts/#omitting-the-layouts-file-extension
   eleventyConfig.setLayoutResolution(false);
