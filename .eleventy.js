@@ -11,7 +11,6 @@ import markdownItAnchor            from 'markdown-it-anchor';
 import markdownItAttrs             from 'markdown-it-attrs';
 import { minify }                  from 'terser';
 import outdent                     from 'outdent';
-import path                        from 'path';
 import pluginSEO                   from 'eleventy-plugin-seo';
 // Next 2 constants for JS bundling browser targets
 import {resolveToEsbuildTarget}    from 'esbuild-plugin-browserslist';
@@ -42,7 +41,7 @@ const markdownLib = markdownIt(markdownItOptions).use(markdownItAnchor).use(mark
 
 export default async function(eleventyConfig) {
 
-  const {EleventyRenderPlugin} = await import('@11ty/eleventy');
+  const {EleventyRenderPlugin} = await import(`@11ty/eleventy`);
 
   // Require layout file extensions; see
   // https://www.11ty.dev/docs/layouts/#omitting-the-layouts-file-extension
@@ -131,7 +130,7 @@ export default async function(eleventyConfig) {
   // SEO
   eleventyConfig.addPlugin(pluginSEO, {
     title: 'Chris J. Zähller',
-    description: 'Résumé & portfolio microsite for Chris J. Zähller',
+    description: 'Résumé & portfolio micro-site for Chris J. Zähller',
     url: 'https://chris.zahller.me',
     author: 'Chris J. Zähller',
     twitter: 'czahller',
@@ -356,14 +355,15 @@ export default async function(eleventyConfig) {
       return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
     });
   });
-eleventyConfig.addPassthroughCopy({
+eleventyConfig.addPassthroughCopy(
+  {
   // Copy `/favicon/` to `_site/`
   'favicon': '/'
  });
 // Set custom directory for input; otherwise use defaults
   return {
     // Site URL
-    url: 'https://tinypaperumbrella.com',
+    url: 'https://chris.zahller.me',
     // When a passthrough file is modified, rebuild the pages:
     passthroughFileCopy: true,
     // Copy any file in these formats:
