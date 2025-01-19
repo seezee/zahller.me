@@ -279,6 +279,18 @@ div.col-5 {
   margin-block: var(--s1);
 }
 
+/* Avatar */
+
+.vcard__avatar {
+  width: 11rem;
+  height: 11rem;
+  flex: 0 0 11rem;
+  border-radius: 50%;
+  border: 5px solid var(--zed-color-textPrimary);
+  box-shadow: 8px 8px 40px -10px rgba(0, 0, 0, .3);
+  margin-right: 2rem;
+}
+
 /* Resume list */
 
 .entrylist,
@@ -320,8 +332,8 @@ div.col-5 {
     transform: translate(-50%, 0);
   }
 
-  &:first-of-type::before {
-    inset-block-start: 1rem;
+  &::before {
+    inset-block-start: .7rem;
   }
 }
 
@@ -334,10 +346,19 @@ div.col-5 {
   }
 }
 
+li {
+
+  &.p-experience,
+  &.p-education,
+  &.repolist,
+  &.repolist__item {
+    margin-block-end: var(--s2);
+  }
+}
+
 .repolist,
 .repolist__item {
   list-style-type: none;
-  margin-block-end: var(--s-1);
 }
 
 .repolist__title,
@@ -347,6 +368,17 @@ font-family: var(--zed-font-default);
 
   a {
     text-decoration: none;
+  }
+}
+
+@media print {
+
+  .utl-screen-only {
+    display: none;
+  }
+
+  .utl-print-only {
+    display: inline-block;
   }
 }
 

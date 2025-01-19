@@ -617,15 +617,29 @@ a:visited {
   }
 }
 
-a[href^='http://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after,
-a[href^='https://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after {
-  display: inline-block;
-  margin-inline-start: .5ch;
-  inline-size: 1ch;
-  block-size: 1lh;
+@media not print {
+  a[href^='http://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after,
+  a[href^='https://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after {
+    display: inline-block;
+    margin-inline-start: .5ch;
+    inline-size: 1ch;
+    block-size: 1lh;
 
-  content: '\2060' var(--zed-external-icon) / 'Opens in new window';
+    content: '\2060' var(--zed-external-icon) / 'Opens in new window';
+  }
 }
+
+@media print {
+
+  a {
+    text-decoration: none;
+
+    &::after {
+      content: ''!important;
+    }
+  }
+}
+
 
 /* code, math */
 code, math {
