@@ -12,6 +12,7 @@ import markdownItAttrs             from 'markdown-it-attrs';
 import { minify }                  from 'terser';
 import outdent                     from 'outdent';
 import pluginSEO                   from 'eleventy-plugin-seo';
+import pluginTOC                   from 'eleventy-plugin-toc';
 // Next 2 constants for JS bundling browser targets
 import {resolveToEsbuildTarget}    from 'esbuild-plugin-browserslist';
 const target                      = resolveToEsbuildTarget(browserslist(
@@ -30,6 +31,46 @@ const target                      = resolveToEsbuildTarget(browserslist(
   printUnknownTargets: false,
 });
 
+/* Permalinks */
+// This object is required inside the renderPermalink function.
+// It's copied directly from the plugin source code.
+const position = {
+  false: "push",
+  true: "unshift",
+}
+
+// Copied directly from the plugin source code, with one edit
+// (marked with comments)
+const renderPermalink = (slug, opts, state, idx) => {
+  const space = () =>
+    Object.assign(new state.Token("text", "", 0), {
+      content: " ",
+    })
+
+  const linkTokens = [
+    Object.assign(new state.Token("link_open", "a", 1), {
+      attrs: [
+        ["class", opts.permalinkClass],
+        ["href", opts.permalinkHref(slug, state)],
+      ],
+    }),
+    Object.assign(new state.Token("html_block", "", 0), {
+      // Edit starts here:
+      content: `<span aria-hidden="true" class="header-anchor__symbol">#</span>
+      <span class="sr-only toc-ignore">Direct link to this section</span>`,
+      // Edit ends
+    }),
+    new state.Token("link_close", "a", -1),
+  ]
+
+  if (opts.permalinkSpace) {
+    linkTokens[position[!opts.permalinkBefore]](space())
+  }
+  state.tokens[idx + 1].children[position[opts.permalinkBefore]](
+    ...linkTokens
+  )
+}
+
 // For Markdown attributes
 const markdownItOptions = {
   html: true,
@@ -37,7 +78,18 @@ const markdownItOptions = {
   linkify: true
 };
 
-const markdownLib = markdownIt(markdownItOptions).use(markdownItAnchor).use(markdownItAttrs);
+// Options for the `markdown-it-anchor` library
+const markdownItAnchorOptions = {
+  permalink: true,
+  renderPermalink,
+}
+
+const markdownLib = markdownIt(markdownItOptions).use(
+  markdownItAnchor,
+  markdownItAnchorOptions,
+).use(
+  markdownItAttrs
+)
 
 export default async function(eleventyConfig) {
 
@@ -179,6 +231,7 @@ export default async function(eleventyConfig) {
   // Extended Markdown
   eleventyConfig.setLibrary('md', markdownLib);
   // Cache busting
+
   eleventyConfig.addPlugin(eleventyAutoCacheBuster, {
     globstring: `**/*.{css,js,png,jpg,jpeg,gif,webp,svg,mp4,ico}`
   });
@@ -203,164 +256,15 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('date', function (date, dateFormat) {
     return format(date, dateFormat)
   })
-  // Sorted collection
-  // See https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
-  eleventyConfig.addCollection(`recipesAscending`, function (collectionApi) {
-    return collectionApi.getFilteredByTag(`recipes`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
+  // Table of Contents
+  eleventyConfig.addPlugin(pluginTOC)
+  // Copy files during build
+  eleventyConfig.addPassthroughCopy(
+    {
+    // Copy `/favicon/` to `_site/`
+    'favicon': '/'
   });
-  eleventyConfig.addCollection(`recipesAscendingA`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/a*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingB`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/b*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingC`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/c*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingD`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/d*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingE`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/e*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingF`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/f*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingG`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/g*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingH`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/h*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingI`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/i*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingJ`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/j*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingK`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/k*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingL`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/l*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingM`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/m*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingN`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/n*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingO`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/o*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingP`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/p*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingQ`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/q*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingR`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/r*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingS`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/s*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingT`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/t*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingU`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/u*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingV`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/v*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingW`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/w*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingX`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/x*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingY`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/y*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`recipesAscendingZ`, function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`**/recipes/z*.md`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`mixesAscending`, function (collectionApi) {
-    return collectionApi.getFilteredByTag(`mixes`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`rumsAscending`, function (collectionApi) {
-    return collectionApi.getFilteredByTag(`rums`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-  eleventyConfig.addCollection(`rhumsAscending`, function (collectionApi) {
-    return collectionApi.getFilteredByTag(`rhums`).sort(function (a, b) {
-      return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
-    });
-  });
-eleventyConfig.addPassthroughCopy(
-  {
-  // Copy `/favicon/` to `_site/`
-  'favicon': '/'
- });
-// Set custom directory for input; otherwise use defaults
+  // Set custom directory for input; otherwise use defaults
   return {
     // Site URL
     url: 'https://chris.zahller.me',

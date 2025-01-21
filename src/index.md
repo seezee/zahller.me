@@ -9,25 +9,30 @@ ogtype: website
 <stack-l>
 <section class="vcard h-card">
 <hgroup>
+<switcher-l space="var(--s5)">
 <stack-l>
 
 <!-- markdownlint-disable MD025 -->
 # Chris J. &#437;ähller
 <!-- markdownlint-enable MD025 -->
 
-Full-Stack Developer &middot; Norman, Oklahoma
+Full-Stack Developer &middot; Norman, Oklahoma {.sub-head}
 
 </stack-l>
+
+![Chris J. Zähller avatar](/assets/images/avatar-2016-short-hair-pencil-moustache.svg) {.vcard__avatar}
+
+</switcher-l>
 </hgroup>
+
+<a class="with-icon" aria-label="Print" role="button" href="#" onclick="window.print();return false;"><svg class="icon icon--print" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-print"></use></svg> <span class="vcard__link-text">Print this document</span> </a> {.utl-screen-only .print-link}
+
 <stack-l>
 
-<a class="with-icon" aria-label="Print" role="button" href="#" onclick="window.print();return false;"><svg class="icon icon--print" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-print"></use></svg> <span class="vcard__link-text">Print this document</span> </a> {.utl-screen-only}
-
-## About Me {.vcar__title}
+## About Me {.vcard__title}
 
 I’m a web developer with decades of experience. I specialize in performant, accessible design.
 
-</stack-l>
 <stack-l space="var(--s-5)">
 <cluster-l class="vcard__contact p-contact" space="var(--s-5)">
 
@@ -44,19 +49,20 @@ I’m a web developer with decades of experience. I specialize in performant, ac
 <a class="vcard__link u-url with-icon" aria-label="Website" href="https://tinypaperumbrella.com"><svg class="icon icon--laptop" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">tinypaperumbrella.com</span></a> {.vcard__contact-item}
 
 </cluster-l>
-<cluster-l class="vcard__social">
+<cluster-l class="vcard__social" space="var(--s-5)">
 
-<a class="vcard__link with-icon" href="https://github.com/seezee" aria-label="Github" rel="me"><svg class="icon icon--github" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg><span class="vcard__link-text p-nickname">@seezee</span> <span class="sr-only">on Github</span></a>
+<a class="vcard__link with-icon" href="https://github.com/seezee" aria-label="Github" rel="me"><svg class="icon icon--github" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg><span class="vcard__link-text p-nickname">@seezee</span> <span class="sr-only">on Github</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://bsky.app/chris.zahller.me" aria-label="Bluesky" rel="me"><svg class="icon icon--bluesky" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bluesky"></use></svg><span class="vcard__link-text p-name">@chris.zahller.me</span> <span class="sr-only">on Bluesky</span></a>
+<a class="vcard__link with-icon" href="https://bsky.app/chris.zahller.me" aria-label="Bluesky" rel="me"><svg class="icon icon--bluesky" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bluesky"></use></svg><span class="vcard__link-text p-name">@chris.zahller.me</span> <span class="sr-only">on Bluesky</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.facebook.com/chris.j.zahller" aria-label="Facebook" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Facebook</span></a>
+<a class="vcard__link with-icon" href="https://www.facebook.com/chris.j.zahller" aria-label="Facebook" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Facebook</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.instagram.com/chris.j.zahller/" aria-label="Instagram" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Instagram</span></a>
+<a class="vcard__link with-icon" href="https://www.instagram.com/chris.j.zahller/" aria-label="Instagram" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Instagram</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.linkedin.com/in/chriszahller" aria-label="LinkedIn" rel="me"><svg class="icon icon--linkedin" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use></svg><span class="vcard__link-text p-name">@chriszahller</span> <span class="sr-only">on LinkedIn</span></a>
+<a class="vcard__link with-icon" href="https://www.linkedin.com/in/chriszahller" aria-label="LinkedIn" rel="me"><svg class="icon icon--linkedin" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use></svg><span class="vcard__link-text p-name">@chriszahller</span> <span class="sr-only">on LinkedIn</span></a> {.vcard__social-item}
 
 </cluster-l>
+</stack-l>
 </stack-l>
 </section>
 <section class="section" id="section-experience">
@@ -476,7 +482,6 @@ ___
 </stack-l>
 </li>
 </stack-l>
-</section>
 
 <cluster-l class="utl-screen-only">
 
@@ -485,4 +490,21 @@ ___
 [![Top Languages](https://github-readme-stats-git-master-chris-zahllers-projects.vercel.app/api/top-langs/?username=seezee&layout=compact&theme=apprentice)](https://github.com/seezee/github-readme-stats) {.stats}
 
 </cluster-l>
+</section>
+<section>
+<stack-l>
+
+## Interests
+
+* Publisher, editor, copy-editor, film & digital photographer at Mercury Photo Bureau
+* Amateur mixologist
+* Bibliophile
+* Melomaniac
+* Cinephile
+* Gastronome
+* Antiquarian
+* Gearhead
+
+</stack-l>
+</section>
 </stack-l>

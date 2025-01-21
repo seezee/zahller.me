@@ -3,7 +3,7 @@
  *
  * 1. .alignleft, .alignright, .aligncenter
  * 2. .no-break
- * 3. .sr-only,.keywords, .govuk-visually-hidden
+ * 3. .sr-only,.keywords, .govuk-visually-hidden, anchors
  * 4. .frac
  * 5. .small-caps
  * 6. .short-work
@@ -45,6 +45,22 @@
   white-space: nowrap;
 
   border-width: 0;
+}
+
+.header-anchor {
+
+  opacity: 0;
+  transition: opacity .2s;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-left: .5rem;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 /* .frac */
@@ -111,7 +127,22 @@ table .frac {
 /* Print styles */
 
 @media print {
-  header, footer {
+
+  header, footer, #toc__wrapper {
+    display: none;
+  }
+
+  .utl-screen-only {
+    display: none;
+  }
+
+  .utl-print-only {
+    display: inline-block;
+  }
+}
+
+@media not print {
+  .utl-print-only {
     display: none;
   }
 }

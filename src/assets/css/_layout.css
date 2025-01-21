@@ -1,14 +1,16 @@
 /**
 * Layout
 *
-* 1. noscript
-* 2. #skip-link
-* 3. Theme toggle
-* 4. #nav-primary-wrapper, #main-wrapper
-* 5. .masonry
-* 6. Columns (.col-2, .col-3, .col-4, .col-5)
-* 7. <dd> styles: dd+br
-* 8. #zed (footer icon)
+* 1.  noscript
+* 2.  #skip-link
+* 3.  Theme toggle
+* 4.  #nav-primary-wrapper, #main-wrapper
+* 5.  .masonry
+* 6.  Columns (.col-2, .col-3, .col-4, .col-5)
+* 7.  <dd> styles: dd+br
+* 8.  #zed (footer icon)
+* 9.  vCard
+* 10. Resume
 */
 
 /* No script */
@@ -274,24 +276,29 @@ div.col-5 {
   margin-block-start: 0;
   }
 
+/* Utility margin */
+.sub-head,
+.print-link {
+  margin-block-end: var(--s1);
+}
+
 /* #zed-footer-icon */
 #zed-footer-icon {
   margin-block: var(--s1);
 }
 
-/* Avatar */
+/** vCard **/
 
 .vcard__avatar {
-  width: 11rem;
-  height: 11rem;
-  flex: 0 0 11rem;
-  border-radius: 50%;
-  border: 5px solid var(--zed-color-textPrimary);
-  box-shadow: 8px 8px 40px -10px rgba(0, 0, 0, .3);
-  margin-right: 2rem;
+  max-inline-size: fit-content;
+  position: relative;
+
+  img {
+    filter: grayscale(100%);
+  }
 }
 
-/* Resume list */
+/* Resume lists */
 
 .entrylist,
 .entrylist__item {
@@ -371,32 +378,28 @@ font-family: var(--zed-font-default);
   }
 }
 
-@media print {
-
-  .utl-screen-only {
-    display: none;
-  }
-
-  .utl-print-only {
-    display: inline-block;
-  }
-}
-
-@media not print {
-  .utl-print-only {
-    display: none;
-  }
-}
-
 .badge img {
   min-inline-size: 20ch;
 }
 
-.vcard__contact-item:not(:last-of-type) {
+.vcard__contact-item:not(:last-of-type),
+.vcard__social-item:not(:last-of-type) {
   margin-inline-end: var(--s1);
 }
 
 .vcard__link-text {
   word-break: keep-all;
   white-space: nowrap;
+}
+
+#toc__wrapper {
+  block-size: 100dvh;
+  max-block-size: calc(100dvh - var(--s1));
+  position: sticky;
+  top: 0;
+  overflow-x: scroll;
+
+  ol {
+    margin-block-start: var(--s5);
+  }
 }
