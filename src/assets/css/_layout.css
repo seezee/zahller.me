@@ -52,7 +52,7 @@ noscript div {
   padding-inline: var(--s5);
   padding-block: var(--s-5);
 
-  background-color: var(--zed-color-figureBG);
+  background-color: var(--zed-color-mainBG);
 }
 
 /* Theme toggle based on
@@ -418,12 +418,20 @@ font-family: var(--zed-font-default);
   white-space: nowrap;
 }
 
+.p-org a {
+  text-decoration: none;
+}
+
 #toc__wrapper {
   block-size: 100dvh;
   max-block-size: calc(100dvh - var(--s1));
   position: sticky;
   top: 0;
   overflow-x: scroll;
+  padding-inline: var(--s3);
+  padding-block-end: var(--s5);
+  background-color: var(--zed-color-sideBarBG);
+}
 
   .toc > ol {
     margin-block-start: var(--s5);

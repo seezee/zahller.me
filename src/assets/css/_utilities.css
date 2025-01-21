@@ -115,15 +115,6 @@ table .frac {
   }
 }
 
-.with-icon {
-  align-items: center;
-}
-
-.icon {
-  width: 1.5cap;
-  height: 1.5cap;
-}
-
 /* Smooth scroll wrapper */
 .scroller {
   scroll-behavior: smooth;

@@ -29,19 +29,18 @@
 }
 
 /* Icons */
-.icon {
-  width: 1cap;
-  height: 1cap;
-}
 
 .with-icon {
   display: inline-flex;
   align-items: baseline;
-}
 
-.with-icon .icon {
-  display: inline-block;
-  margin-inline-end: .5ch;
+    .icon {
+      display: inline-block;
+      margin-inline-end: .5ch;
+      width: 1.5cap;
+      height: 1.5cap;
+
+    }
 }
 
 /* Miscellaneous govuk plugin styles */

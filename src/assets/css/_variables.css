@@ -234,9 +234,17 @@ initial-value: 0.1;
     --zed-color-figureBG: oklch(var(--zed-c-p-100) / .5);
     --zed-color-imgBG: oklch(var(--zed-c-p-50) / .5);
 
+    --zed-color-mainBG: oklch(var(--zed-c-p-100) / .5);
+
+    --zed-color-sideBarBG: oklch(var(--zed-c-p-100));
+
     &[data-theme='dark'] {
       --zed-color-figureBG: oklch(var(--zed-c-p-100) / .5);
       --zed-color-imgBG: oklch(var(--zed-c-p-50) / .5);
+
+      --zed-color-mainBG: oklch(var(--zed-c-p-100) / .5);
+
+      --zed-color-sideBarBG: oklch(var(--zed-c-p-100));
     }
   }
 }
