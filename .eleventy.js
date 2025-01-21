@@ -56,8 +56,8 @@ const renderPermalink = (slug, opts, state, idx) => {
     }),
     Object.assign(new state.Token("html_block", "", 0), {
       // Edit starts here:
-      content: `<span aria-hidden="true" class="header-anchor__symbol">#</span>
-      <span class="sr-only toc-ignore">Direct link to this section</span>`,
+      content: `<span class="sr-only toc-ignore">Direct link to this section</span>
+      <span aria-hidden="true" class="header-anchor__symbol">#</span>`,
       // Edit ends
     }),
     new state.Token("link_close", "a", -1),
@@ -85,8 +85,8 @@ const markdownItAnchorOptions = {
 }
 
 const markdownLib = markdownIt(markdownItOptions).use(
-  markdownItAnchor,
-  markdownItAnchorOptions,
+  markdownItAnchor//,
+  //markdownItAnchorOptions,
 ).use(
   markdownItAttrs
 )
@@ -230,8 +230,14 @@ export default async function(eleventyConfig) {
   )
   // Extended Markdown
   eleventyConfig.setLibrary('md', markdownLib);
+  // Table of Contents plugin
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: [`h2`, `h3`],
+    extractText: function(el) {
+      return el.text().replace(`Direct link to this section`, ``).replace(`#`, ``).trim();
+    }
+  });
   // Cache busting
-
   eleventyConfig.addPlugin(eleventyAutoCacheBuster, {
     globstring: `**/*.{css,js,png,jpg,jpeg,gif,webp,svg,mp4,ico}`
   });
@@ -256,8 +262,6 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('date', function (date, dateFormat) {
     return format(date, dateFormat)
   })
-  // Table of Contents
-  eleventyConfig.addPlugin(pluginTOC)
   // Copy files during build
   eleventyConfig.addPassthroughCopy(
     {

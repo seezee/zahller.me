@@ -289,12 +289,30 @@ div.col-5 {
 
 /** vCard **/
 
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: scale(.2)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .vcard__avatar {
   max-inline-size: fit-content;
   position: relative;
 
   img {
     filter: grayscale(100%);
+    animation: reveal 1s ease-in-out 1s;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .vcard__avatar img {
+    animation: none;
   }
 }
 
@@ -399,7 +417,7 @@ font-family: var(--zed-font-default);
   top: 0;
   overflow-x: scroll;
 
-  ol {
+  > ol {
     margin-block-start: var(--s5);
   }
 }

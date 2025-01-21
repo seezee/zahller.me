@@ -1,0 +1,8 @@
+{% if content | toc %}
+  <aside id="toc__wrapper">
+    {{ content | toc | safe }}
+  </aside>
+{% else %}
+  <div id="toc__wrapper">
+  </div>
+{% endif %}

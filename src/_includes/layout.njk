@@ -30,9 +30,7 @@
           {% include "_footer.njk" %}
         </stack-l>
       </center-l>
-      <aside id="toc__wrapper">
-        {{ content | toc | safe }}
-        </aside>
+      {% include "_sidebar.njk" %}
     </sidebar-l>
     </center-l>
   </body>
