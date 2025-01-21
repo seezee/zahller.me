@@ -244,14 +244,14 @@ https://web.dev/articles/building/a-theme-switch-component */
 .col-4,
 .col-5 {
   columns: 1;
-  column-gap: var(--s-1);
+  column-gap: var(--s2);
 }
 
 div.col-2,
 div.col-3,
 div.col-4,
 div.col-5 {
-  margin-block-end: var(--s-1);
+  margin-block-end: var(--s2);
 }
 
 @media screen and (min-width: 62.25rem) {
@@ -420,4 +420,18 @@ font-family: var(--zed-font-default);
   .toc > ol {
     margin-block-start: var(--s5);
   }
+
+  .toc {
+    li {
+      display: block;
+      counter-increment: list-item;
+    }
+
+    li:before {
+      display: inline-block;
+      content: counters(list-item,'.') '. ';
+      margin-inline-end: 1ch;
+    }
+  }
+
 }

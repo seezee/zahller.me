@@ -496,7 +496,10 @@ ___
 
 ## Interests
 
-* Publisher, editor, copy-editor, film & digital photographer at Mercury Photo Bureau
+<div class="col-2">
+
+* Publisher, editor, & copy-editor at Mercury Photo Bureau
+* Photographer (film & digital) at Mercury Photo bureau
 * Amateur mixologist
 * Bibliophile
 * Melomaniac
@@ -504,7 +507,9 @@ ___
 * Gastronome
 * Antiquarian
 * Gearhead
+* [MINIac](https://www.reddit.com/r/MINI/)
 
+</div>
 </stack-l>
 </section>
 </stack-l>

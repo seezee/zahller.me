@@ -84,6 +84,13 @@ body {
   display: grid; /* Needed to center things, e.g., modals */
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
 
   color-scheme: light;
@@ -224,6 +231,10 @@ blockquote {
 
 /* ol, ul, dt */
 
+ol {
+  counter-reset: list-item;
+}
+
 dl {
   margin-block-start: 0;
 }
@@ -236,6 +247,11 @@ dt {
 dt,
 dd {
   break-inside: avoid;
+}
+
+dd > ul,
+dd > ol {
+  padding-inline-start: 0;
 }
 
 dt {

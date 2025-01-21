@@ -124,6 +124,17 @@ table .frac {
   height: 1.5cap;
 }
 
+/* Smooth scroll wrapper */
+.scroller {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduced) {
+  .scroller {
+    scroll-behavior: auto;
+  }
+}
+
 /* Print styles */
 
 @media print {
