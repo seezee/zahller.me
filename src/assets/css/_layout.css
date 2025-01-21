@@ -371,6 +371,14 @@ div.col-5 {
   }
 }
 
+.p-contact,
+.vcard__social,
+.print-link {
+  a {
+    text-decoration: none;
+  }
+}
+
 li {
 
   &.p-experience,
@@ -422,15 +430,23 @@ font-family: var(--zed-font-default);
   }
 
   .toc {
+
+    ol {
+      list-style-position: outside;
+    }
+
     li {
       display: block;
       counter-increment: list-item;
+      margin-inline-start: 1ch;
+      text-indent: -1.4ch;
     }
 
     li:before {
       display: inline-block;
+      margin-inline-end: .85ch;
+      font-family: var(--zed-font-mono);
       content: counters(list-item,'.') '. ';
-      margin-inline-end: 1ch;
     }
   }
 

@@ -233,6 +233,10 @@ blockquote {
 
 ol {
   counter-reset: list-item;
+
+  & li {
+    list-style-position: outside;
+  }
 }
 
 dl {
@@ -630,18 +634,6 @@ a:visited {
     text-underline-offset: .5rem;
 
     color: var(--zed-nav-current-color);
-  }
-}
-
-@media not print {
-  a[href^='http://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after,
-  a[href^='https://']:not([href*='https://github.com/seezee/github-readme-stats']):not([href*='localhost'])::after {
-    display: inline-block;
-    margin-inline-start: .5ch;
-    inline-size: 1ch;
-    block-size: 1lh;
-
-    content: '\2060' var(--zed-external-icon) / 'Opens in new window';
   }
 }
 
