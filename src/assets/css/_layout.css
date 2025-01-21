@@ -417,7 +417,7 @@ font-family: var(--zed-font-default);
   top: 0;
   overflow-x: scroll;
 
-  > ol {
+  .toc > ol {
     margin-block-start: var(--s5);
   }
 }
