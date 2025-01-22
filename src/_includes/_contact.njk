@@ -46,12 +46,11 @@
       rows="10"
       required
     ></textarea>
-    <div
-      class="g-recaptcha" id="contact-recaptcha" data-theme="dark"
-      data-sitekey="6LeX8L8qAAAAAI6RxHWpI99xi_H1WB8DM3gEU9GX">
-    </div>
-    <button class="button button-primary" type="submit">
-      Send it!
+    <button
+      class="g-recaptcha button button-primary" data-sitekey="6LeX8L8qAAAAAI6RxHWpI99xi_H1WB8DM3gEU9GX"
+      data-callback="onSubmit"
+      data-action="submit">
+        Send it!
     </button>
   </stack-l>
 </form>
