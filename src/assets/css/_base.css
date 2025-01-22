@@ -92,6 +92,7 @@ body {
 }
 
 html {
+  scroll-padding-top: 80px; /* Account for sticky header height */
 
   color-scheme: light;
 

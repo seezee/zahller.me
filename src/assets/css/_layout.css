@@ -158,10 +158,26 @@ https://web.dev/articles/building/a-theme-switch-component */
   }
 }
 
+stack-l:has(header#header) {
+  position: sticky;
+  inset-block-start: -45px; /* Allow header to shrink on scroll */
+
+  block-size: 121.195px;
+
+  background-color: var(--zed-color-primary-200);
+  z-index: 100;
+}
+
+header#header {
+  position: sticky;
+  inset-block-start: 0;
+  block-size: 92.8906px;
+}
+
 /* #nav-primary-wrapper, #main-wrapper */
 #nav-primary-wrapper {
-  padding-block-end: var(--s1);
 
+  padding: var(--s1);
   border-block-end: 1px solid var(--zed-color-textPrimary);
 }
 
