@@ -25,7 +25,7 @@ Full-Stack Developer &middot; Norman, Oklahoma {.sub-head}
 </switcher-l>
 </hgroup>
 
-<a class="with-icon" aria-label="Print" role="button" href="#" onclick="window.print();return false;"><svg class="icon icon--print" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-print"></use></svg> <span class="vcard__link-text">Print this document</span> </a> {.utl-screen-only .print-link}
+<a class="with-icon" aria-label="Print this document" role="button" href="#" onclick="window.print();return false;"><svg class="icon icon--print" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-print"></use></svg> <span class="vcard__link-text">Print this document</span> </a> {.utl-screen-only .print-link}
 
 <stack-l>
 
@@ -38,32 +38,32 @@ I’m a web developer with decades of experience. I specialize in performant, ac
 
 <span id="email" data-sixty-four="Y2hyaXNAbWVzc2VuZ2Vyd2ViZGVzaWduLmNvbQ=="></span> {.vcard__contact-item}
 
-<a class="vcard__link p-tel with-icon" aria-label="Telephone" href="tel:+014053611352"><svg class="icon icon--telephone" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-telephone"></use></svg> <span class="vcard__link-text">+01 405 361 1352</span> </a> {.vcard__contact-item}
+<a class="vcard__link p-tel with-icon" href="tel:+014053611352"><svg class="icon icon--telephone" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-telephone"></use></svg> <span class="sr-only">Telephone: </span><span class="vcard__link-text">+01 405 361 1352</span> </a> {.vcard__contact-item}
 
-<a class="vcard__link with-icon" aria-label="Skype" href="https://join.skype.com/invite/qG6sLLe1JsEk"><svg class="icon icon--skype" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-skype"></use></svg> <span class="vcard__link-text">@chris.zahller</span> </a> {.vcard__contact-item}
+<a class="vcard__link with-icon" href="https://join.skype.com/invite/qG6sLLe1JsEk"><svg class="icon icon--skype" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-skype"></use></svg> <span class="vcard__link-text">@chris.zahller</span><span class="sr-only"> on Skype</span></a> {.vcard__contact-item}
 
-<a class="vcard__link u-url with-icon" aria-label="Website" href="https://messengerwebdesign.com"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Web designer at messengerwebdesign.com</span></a> {.vcard__contact-item}
+<a class="vcard__link u-url with-icon" href="https://messengerwebdesign.com"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Web designer at messengerwebdesign.com</span></a> {.vcard__contact-item}
 
-<a class="vcard__link u-url with-icon" aria-label="Website" href="https://mercury.photo"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Paparazzo at mercury.photo</span></a> {.vcard__contact-item}
+<a class="vcard__link u-url with-icon" href="https://mercury.photo"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Paparazzo at mercury.photo</span></a> {.vcard__contact-item}
 
-<a class="vcard__link u-url with-icon" aria-label="Website" href="https://tinypaperumbrella.com"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Mixologist at tinypaperumbrella.com</span></a> {.vcard__contact-item}
+<a class="vcard__link u-url with-icon" href="https://tinypaperumbrella.com"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> <span class="vcard__link-text">Mixologist at tinypaperumbrella.com</span></a> {.vcard__contact-item}
 
 </cluster-l>
 <cluster-l class="vcard__social" space="var(--s-5)">
 
-<a class="vcard__link with-icon" href="https://github.com/seezee" aria-label="Github" rel="me"><svg class="icon icon--github" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg><span class="vcard__link-text p-nickname">@seezee</span> <span class="sr-only">on Github</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://github.com/seezee" rel="me"><svg class="icon icon--github" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg><span class="vcard__link-text p-nickname">@seezee</span><span class="sr-only"> on Github</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://bsky.app/chris.zahller.me" aria-label="Bluesky" rel="me"><svg class="icon icon--bluesky" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bluesky"></use></svg><span class="vcard__link-text p-name">@chris.zahller.me</span> <span class="sr-only">on Bluesky</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://bsky.app/chris.zahller.me" rel="me"><svg class="icon icon--bluesky" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bluesky"></use></svg><span class="vcard__link-text p-name">@chris.zahller.me</span><span class="sr-only"> on Bluesky</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.facebook.com/chris.j.zahller" aria-label="Facebook" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Facebook</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://www.facebook.com/chris.j.zahller" rel="me"><svg class="icon icon--facebook" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span><span class="sr-only"> on Facebook</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.instagram.com/chris.j.zahller/" aria-label="Instagram" rel="me"><svg class="icon icon--instagram" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span> <span class="sr-only">on Instagram</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://www.instagram.com/chris.j.zahller/" rel="me"><svg class="icon icon--instagram" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg><span class="vcard__link-text p-name">@chris.j.zahller</span><span class="sr-only"> on Instagram</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.linkedin.com/in/chriszahller" aria-label="LinkedIn" rel="me"><svg class="icon icon--linkedin" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use></svg><span class="vcard__link-text p-name">@chriszahller</span> <span class="sr-only">on LinkedIn</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://www.linkedin.com/in/chriszahller" rel="me"><svg class="icon icon--linkedin" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use></svg><span class="vcard__link-text p-name">@chriszahller</span><span class="sr-only"> on LinkedIn</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://www.pinterest.com/chriszahller/" aria-label="Pinterest" rel="me"><svg class="icon icon--pinterest" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use></svg><span class="vcard__link-text p-name">@chriszahller</span> <span class="sr-only">on Pinterest</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://www.pinterest.com/chriszahller/" rel="me"><svg class="icon icon--pinterest" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use></svg><span class="vcard__link-text p-name">@chriszahller</span><span class="sr-only"> on Pinterest</span></a> {.vcard__social-item}
 
-<a class="vcard__link with-icon" href="https://profiles.wordpress.org/seezee/" aria-label="WordPress" rel="me"><svg class="icon icon--wordpress" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wordpress"></use></svg><span class="vcard__link-text p-name">@seezee</span> <span class="sr-only">on WordPress</span></a> {.vcard__social-item}
+<a class="vcard__link with-icon" href="https://profiles.wordpress.org/seezee/" rel="me"><svg class="icon icon--wordpress" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wordpress"></use></svg><span class="vcard__link-text p-name">@seezee</span><span class="sr-only"> on WordPress</span></a> {.vcard__social-item}
 
 </cluster-l>
 </stack-l>

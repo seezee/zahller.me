@@ -411,7 +411,8 @@ li {
 }
 
 .repolist__title,
-.vcard__contact {
+.vcard__contact,
+.vcard__social {
 font-size: var(--zed-font-size--1);
 font-family: var(--zed-font-default);
 
