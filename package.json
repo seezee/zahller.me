@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {

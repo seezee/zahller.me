@@ -20,7 +20,7 @@ Full-Stack Developer &middot; Norman, Oklahoma {.sub-head}
 
 </stack-l>
 
-![Chris J. Zähller avatar](/assets/images/avatar-2016-short-hair-pencil-moustache.svg) {.vcard__avatar}
+![Chris J. Zähller avatar](/assets/images/avatar-2016-short-hair-pencil-moustache.svg) {.vcard__avatar .utl-screen-only}
 
 </switcher-l>
 </hgroup>
@@ -84,10 +84,10 @@ ___
 
 ### Senior Developer (remote contractor) {.entry__title .p-name}
 
-<p class="entry__time"><time class="dt-start" datetime="2022-03">03/2022</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
+<p class="entry__time"><time class="dt-start" datetime="2022-03">03/2022</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge Inc.</a><span class="utl-print-only">( • techbridge.org)</span><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card}
+<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge Inc.</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>techbridge.org</span><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -105,9 +105,9 @@ Created, overhauled, and maintained multiple existing and new websites for Atlan
 
 ### Developer (remote contractor)</h3> {.entry__title .p-name}
 
-<time class="dt-start" datetime="2021-02">02/2021</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><time class="dt-end" datetime="2021-09">09/2021</time> {.entry__time}
+<time class="dt-start" datetime="2021-02">02/2021</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><time class="dt-end" datetime="2021-09">09/2021</time> {.entry__time}
 
-<a href="https://buzzbizzmedia.com/" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Buzzbizz Media</a><span class="utl-print-only"> • (buzzbizzmedia.com)</span><span aria-hidden="true"> • </span> <span class="p-location">Anchorage, Alaska</span> {.entry__organization .p-org .h-card}
+<a href="https://buzzbizzmedia.com/" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Buzzbizz Media</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>buzzbizzmedia.com</span><span aria-hidden="true"> • </span> <span class="p-location">Anchorage, Alaska</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -125,10 +125,10 @@ Responsible for design, build, maintenance, and error-correction of dozens of ag
 
 ### Owner, Developer, Designer {.entry__title .p-name}
 
-<p class="entry__time"><time class="dt-start" datetime="2006">2006</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
+<p class="entry__time"><time class="dt-start" datetime="2006">2006</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://messengerwebdesign.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Messenger Web Design LLC</a><span class="utl-print-only"> • (messengerwebdesign.com)</span><span aria-hidden="true"> • </span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization .p-org .h-card}
+<a href="https://messengerwebdesign.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Messenger Web Design LLC</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>messengerwebdesign.com</span><span aria-hidden="true"> • </span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -146,10 +146,10 @@ Freelance web developer and designer, providing website, UI, and UX design; bran
 
 ### Photographer {.entry__title .p-name}
 
-<p class="entry__time"><time class="dt-start" datetime="2012">2012</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
+<p class="entry__time"><time class="dt-start" datetime="2012">2012</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://woodyfest.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Woody Guthrie Folk Festival</a><span class="utl-print-only"> • (woodyfest.com) </span><span aria-hidden="true"> • </span><span class="p-location">Okemah, Oklahoma</span> {.entry__organization .p-org .h-card}
+<a href="https://woodyfest.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Woody Guthrie Folk Festival</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>woodyfest.com </span><span aria-hidden="true">&nbsp;• </span><span class="p-location">Okemah, Oklahoma</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -178,7 +178,7 @@ ___
 
 ### Technical Certifications {.entry__title .p-name}
 
-<time class="dt-start" datetime="2014-01-30">01/2014</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><time class="dt-end" datetime="2016-08-14">08/2016</time> {.entry__time}
+<time class="dt-start" datetime="2014-01-30">01/2014</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><time class="dt-end" datetime="2016-08-14">08/2016</time> {.entry__time}
 
 Moore–Norman Technology Center <span aria-hidden="true">·</span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization .p-org .h-card}
 
@@ -193,7 +193,7 @@ Earned CompTIA® A+, Microsoft XP+, Linux+, and Cisco Systems® CCNA certificati
 
 ### Bachelor of Fine Arts {.entry__title .p-name}
 
-<time class="dt-start" datetime="1979-09">09/1979</time><span>&zwj;&thinsp;&zwj;–&zwj;&thinsp;&zwj;</span><time class="dt-end" datetime="1985-05">05/1984</time> {.entry__time}
+<time class="dt-start" datetime="1979-09">09/1979</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><time class="dt-end" datetime="1985-05">05/1984</time> {.entry__time}
 
 <span class="p-name">University of Oklahoma</span> <span aria-hidden="true">·</span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization p-org h-card}
 
