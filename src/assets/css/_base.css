@@ -494,6 +494,10 @@ button {
   appearance: none;
   -webkit-appearance: none;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &.button-primary {
     color: var(--zed-color-textSecondary);
     background-color: var(--zed-color-textPrimary);
