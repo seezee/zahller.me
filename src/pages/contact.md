@@ -1,9 +1,9 @@
 ---
 layout: _main.njk
-title: Talk to Us
+title: Talk to Me
 permalink: "/contact/index.html"
 ogtype: website
-excerpt: Let us know what you think! Send your feedback, questions, corrections, criticism, or praise.
+excerpt: Let me know what you think! Send your feedback, questions, corrections, criticism, or praise.
 ---
 <!-- markdownlint-disable MD033 -->
 <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -19,7 +19,7 @@ excerpt: Let us know what you think! Send your feedback, questions, corrections,
 
 <stack-l data-pagefind-ignore>
 
-  Let us know what you think! Send your feedback, questions, corrections, criticism, or praise.
+  Let me know what you think! Send your feedback, questions, corrections, criticism, or praise.
 
   All fields are required.
 
