@@ -306,7 +306,7 @@ div.col-5 {
 
   img {
     filter: grayscale(100%);
-    animation: reveal 1s ease-in-out 1s;
+    animation: reveal 2s var(--ease-bounce-1) 1s;
   }
 }
 
