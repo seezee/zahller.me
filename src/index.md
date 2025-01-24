@@ -87,7 +87,7 @@ ___
 <p class="entry__time"><time class="dt-start" datetime="2022-03">03/2022</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge Inc.</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>techbridge.org</span><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card}
+<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge Inc.</a><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -107,7 +107,7 @@ Created, overhauled, and maintained multiple existing and new websites for Atlan
 
 <time class="dt-start" datetime="2021-02">02/2021</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><time class="dt-end" datetime="2021-09">09/2021</time> {.entry__time}
 
-<a href="https://buzzbizzmedia.com/" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Buzzbizz Media</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>buzzbizzmedia.com</span><span aria-hidden="true"> • </span> <span class="p-location">Anchorage, Alaska</span> {.entry__organization .p-org .h-card}
+<a href="https://buzzbizzmedia.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Buzzbizz Media</a><span aria-hidden="true"> • </span> <span class="p-location">Anchorage, Alaska</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -128,7 +128,7 @@ Responsible for design, build, maintenance, and error-correction of dozens of ag
 <p class="entry__time"><time class="dt-start" datetime="2006">2006</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://messengerwebdesign.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Messenger Web Design LLC</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>messengerwebdesign.com</span><span aria-hidden="true"> • </span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization .p-org .h-card}
+<a href="https://messengerwebdesign.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Messenger Web Design LLC</a><span aria-hidden="true"> • </span> <span class="p-location">Norman, Oklahoma</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -149,7 +149,7 @@ Freelance web developer and designer, providing website, UI, and UX design; bran
 <p class="entry__time"><time class="dt-start" datetime="2012">2012</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://woodyfest.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Woody Guthrie Folk Festival</a><span class="utl-print-only"><span aria-hidden="true">&nbsp;• </span>woodyfest.com </span><span aria-hidden="true">&nbsp;• </span><span class="p-location">Okemah, Oklahoma</span> {.entry__organization .p-org .h-card}
+<a href="https://woodyfest.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Woody Guthrie Folk Festival</a><span aria-hidden="true">&nbsp;• </span><span class="p-location">Okemah, Oklahoma</span> {.entry__organization .p-org .h-card}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -205,7 +205,7 @@ Earned BFA in metal design.
 </ol>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-skills">
 <stack-l>
 
 ## Skills
@@ -213,7 +213,7 @@ Earned BFA in metal design.
 ___
 
 <switcher-l limit="2">
-<section>
+<section class="section" id="section-web-dev">
 <stack-l>
 <dl>
 <dt>Web Dev</dt>
@@ -235,7 +235,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-networking">
 <stack-l>
 <dl>
 <dt>Networking/Server</dt>
@@ -260,7 +260,7 @@ ___
 </section>
 </switcher-l>
 <switcher-l limit="2">
-<section>
+<section class="section" id="section-design">
 <stack-l>
 <dl>
 <dt>Design, Illustration, & Layout</dt>
@@ -276,7 +276,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-photography">
 <stack-l>
 
 <dl>
@@ -292,7 +292,7 @@ ___
 </section>
 </switcher-l>
 <switcher-l limit="2">
-<section>
+<section class="section" id="section-cloud">
 <stack-l>
 <dl>
 <dt>Cloud Computing</dt>
@@ -307,7 +307,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-admin">
 <stack-l>
 
 <dl>
@@ -327,7 +327,7 @@ ___
 </section>
 </switcher-l>
 <switcher-l limit="2">
-<section>
+<section class="section" id="section-writing">
 <stack-l>
 <dl>
 <dt>Writing</dt>
@@ -342,7 +342,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-other-skills">
 <stack-l>
 
 <dl>
@@ -359,7 +359,7 @@ ___
 </switcher-l>
 </stack-l>
 </section>
-<section>
+<section class="section" id="section-open-source">
 <stack-l>
 
 ## Open Source
@@ -372,7 +372,7 @@ ___
 
 ### [wp-foft-loader](https://github.com/seezee/wp-foft-loader) {.repolist__title}
 
-<span class="repolist__url utl-print-only">github.com/seezee/wp-foft-loader</span> A WordPress plugin to load web fonts efficiently.
+A WordPress plugin to load web fonts efficiently.
 
 <cluster-l class="repolist__stats">
 
@@ -393,7 +393,7 @@ ___
 
 ### [Five-Star-Ratings-Shortcode](https://github.com/seezee/Five-Star-Ratings-Shortcode) {.repolist__title}
 
-<span class="repolist__url utl-print-only">github.com/seezee/Five-Star-Ratings-Shortcode</span> A WordPress plugin to display star ratings.
+A WordPress plugin to display star ratings.
 
 <cluster-l class="repolist__stats">
 
@@ -413,7 +413,7 @@ ___
 
 ### [conditionally-load-cf7](https://github.com/seezee/conditionally-load-cf7 ) {.repolist__title}
 
-<span class="repolist__url utl-print-only">github.com/seezee/conditionally-load-cf7 </span> Load Contact Form 7 scripts and styles only when necessary.
+A WordPress plugin to load Contact Form 7 scripts and styles only when necessary.
 
 <cluster-l class="repolist__stats">
 
@@ -454,7 +454,7 @@ ___
 
 ### [zahller.me](https://github.com/seezee/zahller.me) {.repolist__title}
 
-<span class="repolist__url utl-print-only">github.com/seezee/zahller.me</span> My online résumé. You’re looking at it.
+My online résumé. You’re looking at it.
 
 <cluster-l class="repolist__stats">
 
@@ -472,9 +472,9 @@ ___
 <li role="listitem" class="repolist__item">
 <stack-l space="var(--s-3)">
 
-### techbridge-docs {.repolist__title}
+### [techbridge-docs](https://github.com/techbridgedev/techbridge-docs) {.repolist__title}
 
-<span class="repolist__url utl-print-only">github.com/techbridgedev/techbridge-docs</span> Internal documentation for Techbridge, Inc., built with Docusaurus + React. **NOTE**: this is a private repository.
+Internal documentation for Techbridge, Inc., built with Docusaurus + React. **NOTE**: this is a private repository.
 
 <cluster-l class="repolist__stats">
 
@@ -495,7 +495,7 @@ ___
 
 </cluster-l>
 </section>
-<section>
+<section class="section" id="section-interests">
 <stack-l>
 
 ## Interests

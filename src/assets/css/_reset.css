@@ -1,40 +1,43 @@
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@layer reset {
 
-* {
-  margin: 0;
-}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-body {
-  line-height: calc(1em + 0.5rem);
-  -webkit-font-smoothing: antialiased;
-}
+  * {
+    margin: 0;
+  }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-inline-size: 100%;
-}
+  body {
+    line-height: calc(1em + 0.5rem);
+    -webkit-font-smoothing: antialiased;
+  }
 
-input, button, textarea, select {
-  font: inherit;
-}
+  img, picture, video, canvas, svg {
+    display: block;
+    max-inline-size: 100%;
+  }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+  input, button, textarea, select {
+    font: inherit;
+  }
 
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-before: 3;
-  -webkit-hyphenate-limit-after: 3;
-  -webkit-hyphenate-limit-lines: 1;
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 
-  hyphens: auto;
-  hyphenate-limit-chars: 6 3 3;
-  hyphenate-limit-lines: 1;
-  hyphenate-limit-zone: 8%;
-  hyphenate-limit-last: always;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-lines: 1;
+
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 1;
+    hyphenate-limit-zone: 8%;
+    hyphenate-limit-last: always;
+  }
 }

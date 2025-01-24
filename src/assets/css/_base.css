@@ -5,13 +5,14 @@
  * Block elements
  * 1.  view transitions
  * 2.  html, body
- * 3.  h1 – h6, hgroup
- * 4.  p
- * 5.  blockquote
- * 6.  ol, ul, dt
- * 7.  details, summary
- * 8.  table
- * 9.  form, inline form elements (input, textarea, button, select, option,
+ * 3.  main, header, footer, section, aside
+ * 4.  h1 – h6, hgroup
+ * 5.  p
+ * 6.  blockquote
+ * 7.  ol, ul, dt
+ * 8.  details, summary
+ * 9.  table
+ * 10. form, inline form elements (input, textarea, button, select, option,
  *     optgroup, fieldset, label, output)
  * 9.  pre
  * 10. kbd
@@ -143,6 +144,13 @@ body {
   font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
   font-kerning: normal;
   font-variant-numeric: proportional-nums oldstyle-nums;
+}
+
+@media print {
+  article,
+  section {
+    break-inside: avoid;
+  }
 }
 
 /* h1 – h6 */
@@ -646,10 +654,6 @@ a:visited {
 
   a {
     text-decoration: none;
-
-    &::after {
-      content: ''!important;
-    }
   }
 }
 

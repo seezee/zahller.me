@@ -47,6 +47,10 @@
   border-width: 0;
 }
 
+*[hidden] {
+  display: none;
+}
+
 .header-anchor {
 
   opacity: 0;
@@ -133,6 +137,12 @@ table .frac {
   header, footer, #toc__wrapper {
     display: none;
   }
+
+  #section-experience a[href^="https://"]:not([href="https://github.com/seezee/github-readme-stats"])::after,
+  #section-open-source a[href^="https://"]:not([href="https://github.com/seezee/github-readme-stats"])::after {
+    content: "\00A0•\00A0" attr(href);
+  }
+
 
   .utl-screen-only {
     display: none;
