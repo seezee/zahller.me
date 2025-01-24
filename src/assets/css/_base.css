@@ -248,6 +248,10 @@ ol {
   }
 }
 
+li {
+  break-inside: avoid;
+}
+
 dl {
   margin-block-start: 0;
 }
