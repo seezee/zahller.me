@@ -474,3 +474,7 @@ font-family: var(--zed-font-default);
     content: counters(list-item,'.') '. ';
   }
 }
+
+#section-interests {
+  page-break-before: always;
+}

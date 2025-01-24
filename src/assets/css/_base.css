@@ -149,7 +149,7 @@ body {
 @media print {
   article,
   section {
-    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
 
