@@ -160,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   font-variant-numeric: lining-nums;
   line-height: 1.1;
   text-wrap: balance;
+  text-box: trim-both cap alphabetic;
 }
 
 h1 {
@@ -497,9 +498,9 @@ button {
   padding-inline: var(--s0);
   padding-block: var(--s-2);
 
+  font-size: var(--zed-font-size--1);
   line-height: 1.1;
-  text-transform: lowercase;
-  font-variant: small-caps;
+  text-transform: uppercase;
   letter-spacing: .05ch;
 
   border: solid 2px transparent;
@@ -532,6 +533,14 @@ button {
       color: var(--zed-color-hoverPrimary);
       background-color: var(--zed-color-hoverSecondary);
     }
+  }
+}
+
+
+@supports (text-box: trim-both cap alphabetic) {
+  button {
+    padding-block: var(--s0);
+    text-box: trim-both cap alphabetic;
   }
 }
 
