@@ -41,7 +41,7 @@
  * 8. hr
  *
  * Pseudo-elements
- * 1. (none)
+ * 1. ::target-text
  *
  */
 
@@ -768,4 +768,11 @@ nav {
 /* hr */
 hr {
   border-color: var(--zed-color-textPrimary);
+}
+
+/* target-text */
+
+::target-text {
+  color: var(--zed-color-textSecondary);
+  background-color: var(--zed-color-textPrimary);
 }
