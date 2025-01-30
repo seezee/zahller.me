@@ -204,8 +204,7 @@ p {
   text-wrap: pretty;
 
   &:empty {
-    line-height: 0;
-    margin-block-start: 0;
+    display: none;
   }
 }
 
@@ -535,7 +534,6 @@ button {
     }
   }
 }
-
 
 @supports (text-box: trim-both cap alphabetic) {
   button {

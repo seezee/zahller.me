@@ -230,6 +230,7 @@ ___
 * WordPress, WP-CLI, WP i18n
 * Node, Grunt, Yarn
 * cPanel, PHPMyAdmin
+* IDEs (VSCode)
 
 </dd>
 </dl>
