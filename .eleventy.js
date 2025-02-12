@@ -266,7 +266,10 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy(
     {
     // Copy `/favicon/` to `_site/`
-    'favicon': '/'
+    'favicon': '/',
+    // Copy avatars
+    '.well-known': '/.well-known',
+    'avatar.png': '/'
   });
   // Set custom directory for input; otherwise use defaults
   return {
