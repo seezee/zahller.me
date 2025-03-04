@@ -12,6 +12,10 @@
     margin: 0;
   }
 
+  stack-l > h1 {
+    margin-block-start: 1.5rem;
+  }
+
   body {
     line-height: calc(1em + 0.5rem);
     -webkit-font-smoothing: antialiased;
