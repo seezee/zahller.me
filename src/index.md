@@ -229,6 +229,7 @@ ___
 * Static website builders (Eleventy, Docusaurus)
 * Nunjucks
 * WordPress, WP-CLI, WP i18n
+* Page builders (WordPress Block Editor, Elementor, Beaver Builder)
 * Node, Grunt, Yarn
 * cPanel, PHPMyAdmin
 * IDEs (VSCode)
@@ -322,6 +323,7 @@ ___
 * Google Docs
 * Slack
 * Microsoft Teams
+* Trello
 
 </dd>
 </dl>
@@ -511,6 +513,7 @@ Internal documentation for Techbridge, Inc., built with Docusaurus + React. **NO
 * Melomaniac
 * Cinephile
 * Gastronome
+* Turophile
 * Antiquarian
 * Gearhead
 * [MINIac](https://www.reddit.com/r/MINI/)
