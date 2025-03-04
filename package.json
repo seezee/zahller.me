@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "npx @11ty/eleventy --serve --incremental",
     "build": "npx @11ty/eleventy"
   },
-  "keywords": [],
+  "keywords": ["resume", "résumé", "curriculum vitae", "portfolio"],
   "author": "Chris J. Zähller",
   "license": "GPL-3.0-or-later",
   "type": "module",
