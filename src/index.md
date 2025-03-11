@@ -478,7 +478,7 @@ My online résumé. You’re looking at it.
 
 ### [techbridge-docs](https://github.com/techbridgedev/techbridge-docs) {.repolist__title}
 
-[Internal documentation](https://docs.techbridge.org) for Techbridge, Inc., built with Docusaurus + React. **NOTE**: the GIT repository for this is private, so my stats are not included on this page.
+[Internal documentation](https://docs.techbridge.org) for Techbridge, Inc., built with Docusaurus + React. **NOTE**: Techbridge Docs’ GIT repository is private, so my stats are not included below. As of <time datetime="2025-03-11">11 March 2025</time> my commit count for this repo is 831.
 
 <cluster-l class="repolist__stats">
 
