@@ -483,6 +483,10 @@ textarea {
   min-block-size: 5rlh;
 }
 
+label {
+  display: block;
+}
+
 button,
 label {
   font-variant-numeric: tabular-nums lining-nums slashed-zero;
