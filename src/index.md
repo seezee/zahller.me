@@ -70,7 +70,7 @@ I’m a web developer with decades of experience. I specialize in performant, ac
 </stack-l>
 </stack-l>
 </section>
-<section class="section" id="section-experience" aria-labelled-by="work-experience">
+<section class="section" id="section-experience" aria-labelledby="work-experience">
 <stack-l>
 
 ## Work Experience
@@ -295,7 +295,7 @@ ___
 </section>
 </switcher-l>
 <switcher-l limit="2">
-<section class="section" id="section-cloud" aria-labelled-by="#cloud">
+<section class="section" id="section-cloud" aria-labelledby="#cloud">
 <stack-l>
 <dl>
 <dt id="cloud">Cloud Computing</dt>
@@ -310,7 +310,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section class="section" id="section-admin" aria-labelled-by="#admin">
+<section class="section" id="section-admin" aria-labelledby="#admin">
 <stack-l>
 
 <dl>
@@ -331,7 +331,7 @@ ___
 </section>
 </switcher-l>
 <switcher-l limit="2">
-<section class="section" id="section-writing" aria-labelled-by="#writing">
+<section class="section" id="section-writing" aria-labelledby="#writing">
 <stack-l>
 <dl>
 <dt id="writing">Writing</dt>
@@ -346,7 +346,7 @@ ___
 </dl>
 </stack-l>
 </section>
-<section class="section" id="section-other-skills" aria-labelled-by="#other-skills">
+<section class="section" id="section-other-skills" aria-labelledby="#other-skills">
 <stack-l>
 
 <dl>
@@ -363,7 +363,7 @@ ___
 </switcher-l>
 </stack-l>
 </section>
-<section class="section" id="section-open-source" aria-labelled-by="#open-source">
+<section class="section" id="section-open-source" aria-labelledby="#open-source">
 <stack-l>
 
 ## Open Source
@@ -499,7 +499,7 @@ My online résumé. You’re looking at it.
 
 </cluster-l>
 </section>
-<section class="section" id="section-interests" aria-labelled-by="#interests">
+<section class="section" id="section-interests" aria-labelledby="#interests">
 <stack-l>
 
 ## Interests

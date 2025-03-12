@@ -150,6 +150,7 @@ body {
   article,
   section {
     page-break-inside: avoid;
+    break-after: always;
   }
 }
 
