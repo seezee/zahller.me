@@ -499,6 +499,18 @@ My online résumé. You’re looking at it.
 
 </cluster-l>
 </section>
+<section class="section" id="section-writing" aria-labelledby="#technical-writing">
+<stack-l>
+
+## Technical Writing (Select)
+
+* [WordPress: How to Add Speech Recognition](https://messengerwebdesign.com/2018/03/23/wordpress-add-search-speechrecognition/)
+* [Foiling Cryptomining Supply Chain Attack on Your Website](https://messengerwebdesign.com/foiling-cryptomining-supply-chain-attack-on-your-wordpress-site/)
+* [Implementing Dark Mode at Mercury Photo Bureau](https://messengerwebdesign.com/dark-mode-theme-switcher-redux/)
+* [Dark Mode Theme Switcher Redux](https://messengerwebdesign.com/2021/03/01/dark-mode-theme-switcherredux/)
+
+</stack-l>
+</section>
 <section class="section" id="section-interests" aria-labelledby="#interests">
 <stack-l>
 

@@ -53,6 +53,10 @@ noscript div {
   padding-block: var(--s-5);
 
   background-color: var(--zed-color-mainBG);
+
+  @media print {
+    background-color: transparent;
+  }
 }
 
 /* Theme toggle based on
@@ -166,6 +170,10 @@ stack-l:has(header#header) {
 
   background-color: var(--zed-color-primary-200);
   z-index: 100;
+
+  @media print {
+    background-color: transparent;
+  }
 }
 
 header#header {

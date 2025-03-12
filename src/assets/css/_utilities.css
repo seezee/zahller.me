@@ -139,7 +139,8 @@ table .frac {
   }
 
   #section-experience a[href^="https://"]:not([href="https://github.com/seezee/github-readme-stats"])::after,
-  #section-open-source a[href^="https://"]:not([href="https://github.com/seezee/github-readme-stats"])::after {
+  #section-open-source a[href^="https://"]:not([href="https://github.com/seezee/github-readme-stats"])::after,
+  #section-writing a[href^="https://"]::after {
     content: "\00A0•\00A0" attr(href);
   }
 

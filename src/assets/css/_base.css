@@ -83,12 +83,13 @@ html,
 body {
   block-size: 100%;
   display: grid; /* Needed to center things, e.g., modals */
-}
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
+  @media screen and (prefers-reduced-motion: no-preference) {
     scroll-behavior: smooth;
+  }
+
+  @media print {
+    background-color: transparent;
   }
 }
 
@@ -124,6 +125,10 @@ html {
 
   @starting-style {
     transition: background-color 0s ease, color 0s ease;
+  }
+
+  @media print {
+    background-color: #fff;
   }
 }
 
