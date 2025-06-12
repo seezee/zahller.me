@@ -28,7 +28,7 @@ export default class Center extends HTMLElement {
             ${this.intrinsic ? `
             display: flex;
             flex-direction: column;
-            align-items: center;`
+            align-items: center safe;`
             : ''}
           }
         `.replace(/\s\s+/g, ' ').trim();

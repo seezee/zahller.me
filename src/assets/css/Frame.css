@@ -3,7 +3,7 @@ frame-l {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center safe;
 }
 
 frame-l > img,

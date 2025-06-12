@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,17 @@
     "start": "npx @11ty/eleventy --serve --incremental",
     "build": "npx @11ty/eleventy"
   },
-  "keywords": ["resume", "résumé", "curriculum vitae", "portfolio"],
+  "keywords": [
+    "resume",
+    "résumé",
+    "curriculum vitae",
+    "portfolio"
+  ],
   "author": "Chris J. Zähller",
   "license": "GPL-3.0-or-later",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.1",
     "@11ty/eleventy-img": "^3.1.8",
     "eleventy-plugin-seo": "^0.5.2"
   },

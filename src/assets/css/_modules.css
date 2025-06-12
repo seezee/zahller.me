@@ -32,7 +32,7 @@
 
 .with-icon {
   display: inline-flex;
-  align-items: center;
+  align-items: center safe;
 
     .icon {
       display: inline-block;

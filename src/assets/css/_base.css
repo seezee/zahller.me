@@ -368,7 +368,7 @@ details {
 
 summary {
   display: inline-flex;
-  align-items: center;
+  align-items: center safe;
   padding: var(--s0) var(--s1);
 
   text-transform: uppercase;
@@ -643,7 +643,7 @@ icon-l {
   }
 
   &.bigger {
-    align-items: center;
+    align-items: center safe;
 
     & .icon {
       height: 1.3459cap; /* 1em/20px for default font; YMMV */
