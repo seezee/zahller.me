@@ -452,6 +452,26 @@ A WordPress plugin to load Contact Form 7 scripts and styles only when necessary
 </cluster-l>
 </stack-l>
 </li>
+<li role="listitem" class="repolist__item">
+<stack-l space="var(--s-3)">
+
+### [mercury.photo](https://github.com/seezee/mercury.photo) {.repolist__title}
+
+<span class="repolist__url utl-print-only">github.com/seezee/mercury.photo</span> [Mercury Photo Bureau](https://mercury.photo/), a photography and music blog.
+
+<cluster-l class="repolist__stats">
+
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>0<span class="sr-only"> stars</span>
+
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+
+![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/mercury.photo?style=for-the-badge&color=030303) {.badge}
+
+![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/commit/seezee/mercury.photo?style=for-the-badge&color=030303) {.badge}
+
+</cluster-l>
+</stack-l>
+</li>
 </li>
 <li role="listitem" class="repolist__item">
 <stack-l space="var(--s-3)">
@@ -478,7 +498,7 @@ My online résumé. You’re looking at it.
 
 ### [techbridge-docs](https://github.com/techbridgedev/techbridge-docs) {.repolist__title}
 
-[Internal documentation](https://docs.techbridge.org) for Techbridge, Inc., built with Docusaurus + React. **NOTE**: Techbridge Docs’ GIT repository is private, so my stats are not included below. As of <time datetime="2025-03-11">11 March 2025</time> my commit count for this repo is 831.
+[Internal documentation](https://docs.techbridge.org) for Techbridge, Inc., built with Docusaurus + React. **NOTE**: Techbridge Docs’ GIT repository is private, so my stats are not included below.
 
 <cluster-l class="repolist__stats">
 
