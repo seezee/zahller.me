@@ -524,6 +524,7 @@ My online résumé. You’re looking at it.
 
 ## Technical Writing (Select)
 
+* [Replacing WordPress Cron With PHP Cron on OpenLiteSpeed Server](https://messengerwebdesign.com/replacing-wordpress-cron-with-php-cron-on-openlitespeed-server/)
 * [WordPress: How to Add Speech Recognition](https://messengerwebdesign.com/2018/03/23/wordpress-add-search-speechrecognition/)
 * [Foiling Cryptomining Supply Chain Attack on Your Website](https://messengerwebdesign.com/foiling-cryptomining-supply-chain-attack-on-your-wordpress-site/)
 * [Implementing Dark Mode at Mercury Photo Bureau](https://messengerwebdesign.com/dark-mode-theme-switcher-redux/)
