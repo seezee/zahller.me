@@ -476,7 +476,6 @@ font-family: var(--zed-font-default);
   li {
     display: block;
     counter-increment: list-item;
-    margin-inline-start: 1ch;
     text-indent: -1.4ch;
   }
 

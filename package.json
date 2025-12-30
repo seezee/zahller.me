@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "dotenv": "^17.2.3",
     "eleventy-auto-cache-buster": "^0.8.3",
     "eleventy-plugin-footnotes": "^0.11.0",
-    "eleventy-plugin-toc": "github:lmammino/eleventy-plugin-toc",
+    "eleventy-plugin-nesting-toc": "^1.3.0",
     "esbuild": "^0.27.2",
     "esbuild-plugin-browserslist": "^2.0.0",
     "markdown-it": "^14.1.0",

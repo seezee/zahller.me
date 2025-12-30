@@ -12,7 +12,7 @@ import markdownItAttrs             from 'markdown-it-attrs';
 import { minify }                  from 'terser';
 import outdent                     from 'outdent';
 import pluginSEO                   from 'eleventy-plugin-seo';
-import pluginTOC                   from 'eleventy-plugin-toc';
+import pluginTOC                   from 'eleventy-plugin-nesting-toc';
 // Next 2 constants for JS bundling browser targets
 import {resolveToEsbuildTarget}    from 'esbuild-plugin-browserslist';
 const target                      = resolveToEsbuildTarget(browserslist(
