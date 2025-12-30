@@ -2,7 +2,7 @@
 
 import browserslist                from 'browserslist';
 import eleventyAutoCacheBuster     from 'eleventy-auto-cache-buster';
-import eleventyPluginFilesMinifier from '@sherby/eleventy-plugin-files-minifier';
+import eleventyPluginFilesMinifier from '@codestitchofficial/eleventy-plugin-minify';
 import esbuild                     from 'esbuild';
 import format                      from 'date-fns/format';
 import Image                       from '@11ty/eleventy-img';
