@@ -134,7 +134,7 @@ Responsible for design, build, maintenance, and error-correction of dozens of ag
 </stack-l>
 <div class="entry__content p-summary">
 
-Freelance web developer and designer, providing website, UI, and UX design; branding (including logos and brand marks); and front- and back-end development.
+Freelance web developer and designer, providing website, UI, and UX design; branding (including logos and brand marks); and front and back&zwj;&ndash;&zwj;end development.
 
 </div>
 </stack-l>
@@ -147,7 +147,7 @@ Freelance web developer and designer, providing website, UI, and UX design; bran
 
 ### Photographer {.entry__title .p-name}
 
-<p class="entry__time"><time class="dt-start" datetime="2012">2012</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
+<p class="entry__time"><time class="dt-start" datetime="2012">2012</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>2025
 </span></p>
 
 <a href="https://woodyfest.com" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Woody Guthrie Folk Festival</a><span aria-hidden="true">&nbsp;• </span><span class="p-location">Okemah, Oklahoma</span> {.entry__organization .p-org .h-card}
@@ -301,10 +301,11 @@ ___
 <dt id="cloud">Cloud Computing</dt>
 <dd>
 
-* Google Cloud
 * Amazon Web Services
-* Vultr
+* Cloudflare Workers
+* Google Cloud
 * Vercel
+* Vultr
 
 </dd>
 </dl>
