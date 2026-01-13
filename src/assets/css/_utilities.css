@@ -2,12 +2,13 @@
  * Utilities CSS
  *
  * 1. .alignleft, .alignright, .aligncenter
- * 2. .no-break
- * 3. .sr-only,.keywords, .govuk-visually-hidden, anchors
- * 4. .frac
- * 5. .small-caps
- * 6. .short-work
- * 7.  Print styles
+*. 2. .flex-align-center
+ * 3. .no-break
+ * 4. .sr-only,.keywords, .govuk-visually-hidden, anchors
+ * 5. .frac
+ * 6. .small-caps
+ * 7. .short-work
+ * 8.  Print styles
  */
 
  /* .alignleft, .alignright, .aligncenter */
@@ -22,6 +23,13 @@
 .aligncenter {
   text-align: center;
   text-wrap: balance;
+}
+
+/* .flex-align-center */
+.flex-align-center {
+  display: inline-flex;
+  align-items: safe center;
+  gap: .5ch;
 }
 
 /* .no-break */

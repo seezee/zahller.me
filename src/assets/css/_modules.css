@@ -32,14 +32,13 @@
 
 .with-icon {
   display: inline-flex;
-  align-items: center safe;
+  align-items: safe center;
 
     .icon {
       display: inline-block;
       margin-inline-end: .5ch;
       width: 1.5cap;
       height: 1.5cap;
-
     }
 }
 
