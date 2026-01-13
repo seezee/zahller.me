@@ -381,9 +381,10 @@ A WordPress plugin to load web fonts efficiently.
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>5<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>5<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span></p>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
+</p>
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/wp-foft-loader?style=for-the-badge&color=030303) {.badge}
 
@@ -402,9 +403,9 @@ A WordPress plugin to display star ratings.
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/Five-Star-Ratings-Shortcode?style=for-the-badge&color=030303) {.badge}
 
@@ -422,9 +423,9 @@ A WordPress plugin to load Contact Form 7 scripts and styles only when necessary
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>4<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>4<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/conditionally-load-cf7?style=for-the-badge&color=030303) {.badge}
 
@@ -442,9 +443,9 @@ A WordPress plugin to load Contact Form 7 scripts and styles only when necessary
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/teekee-deebee-by-seezee?style=for-the-badge&color=030303) {.badge}
 
@@ -462,9 +463,9 @@ A WordPress plugin to load Contact Form 7 scripts and styles only when necessary
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>0<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>0<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/mercury.photo?style=for-the-badge&color=030303) {.badge}
 
@@ -483,9 +484,9 @@ My online résumé. You’re looking at it.
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 ![GitHub Badge](https://github-repo-stats-eight.vercel.app/github/contrib/seezee/zahller.me?style=for-the-badge&color=030303) {.badge}
 
@@ -503,9 +504,9 @@ My online résumé. You’re looking at it.
 
 <cluster-l class="repolist__stats">
 
-<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span>
+<span class="with-icon"><svg class="icon icon--star" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg></span>1<span class="sr-only"> stars</span> {.flex-align-center}
 
-<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span>
+<span class="with-icon"><svg class="icon icon--fork" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fork"></use></svg></span>0<span class="sr-only"> forks</span> {.flex-align-center}
 
 </cluster-l>
 </stack-l>
