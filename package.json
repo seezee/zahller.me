@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.51",
+  "version": "1.0.52",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {
@@ -26,18 +26,18 @@
     "@codestitchofficial/eleventy-plugin-minify": "github:CodeStitchOfficial/eleventy-plugin-minify",
     "browserslist": "^4.28.1",
     "date-fns": "^4.1.0",
-    "dotenv": "^17.2.3",
-    "eleventy-auto-cache-buster": "^0.8.3",
+    "dotenv": "^17.3.1",
+    "eleventy-auto-cache-buster": "^0.9.1",
     "eleventy-plugin-footnotes": "^0.11.0",
     "eleventy-plugin-nesting-toc": "^1.3.0",
-    "esbuild": "^0.27.2",
+    "esbuild": "^0.27.3",
     "esbuild-plugin-browserslist": "^2.0.0",
     "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
     "outdent": "^0.8.0",
-    "prettier": "^3.7.4",
-    "terser": "^5.44.1"
+    "prettier": "^3.8.1",
+    "terser": "^5.46.0"
   },
   "browserslist": {
     "production": [
