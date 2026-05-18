@@ -4,7 +4,7 @@ import browserslist                from 'browserslist';
 import eleventyAutoCacheBuster     from 'eleventy-auto-cache-buster';
 import eleventyPluginFilesMinifier from '@codestitchofficial/eleventy-plugin-minify';
 import esbuild                     from 'esbuild';
-import format                      from 'date-fns/format';
+import { format }                  from 'date-fns';
 import Image                       from '@11ty/eleventy-img';
 import markdownIt                  from 'markdown-it';
 import markdownItAnchor            from 'markdown-it-anchor';
