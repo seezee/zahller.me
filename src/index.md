@@ -88,7 +88,7 @@ ___
 <p class="entry__time"><time class="dt-start" datetime="2022-03">03/2022</time><span>&zwj;&hairsp;&zwj;–&zwj;&hairsp;&zwj;</span><span>{% renderTemplate "njk" %}{% Today %}Present{% endToday %}{% endrenderTemplate %}
 </span></p>
 
-<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge Inc.</a><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card .flex-align-center}
+<a href="https://techbridge.org" class="p-name u-url with-icon" target="_blank" rel="noopener noreferrer"><svg class="icon icon--globe" role="img" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-globe"></use></svg> Techbridge, Inc.</a><span aria-hidden="true"> • </span><span class="p-location">Atlanta</span> {.entry__organization .p-org .h-card .flex-align-center}
 
 </stack-l>
 <div class="entry__content p-summary">
@@ -488,7 +488,7 @@ My online résumé. You’re looking at it.
 
 ### [cyber.techbridge.org](https://github.com/techbridgedev/techbridge-serket-tech-security) {.repolist__title}
 
-A <a href="https://techbridge-serket-tech-security.vercel.app/" target="_blank" rel="external noopener">micro-site</a>, currently under development, built for a collaboration between Serket-Tech Security and Techbridge Inc.
+A <a href="https://techbridge-serket-tech-security.vercel.app/" target="_blank" rel="external noopener">micro-site</a>, currently under development, built for a collaboration between Serket-Tech Security and Techbridge, Inc.
 
 <cluster-l class="repolist__stats">
 
