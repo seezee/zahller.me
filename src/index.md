@@ -486,9 +486,9 @@ My online résumé. You’re looking at it.
 <li role="listitem" class="repolist__item">
 <stack-l space="var(--s-3)">
 
-### [cyber.techbridge.org](https://github.com/techbridgedev/techbridge-serket-tech-security) {.repolist__title}
+### [bottleneck.justiceserver.techbridge.org](https://github.com/techbridgedev/techbridge-bottleneck) {.repolist__title}
 
-A <a href="https://techbridge-serket-tech-security.vercel.app/" target="_blank" rel="external noopener">micro-site</a>, currently under development, built for a collaboration between Serket-Tech Security and Techbridge, Inc.
+A <a href="https://bottleneck.justiceserver.techbridge.org" target="_blank" rel="external noopener">micro-site</a> built for Techbridge, Inc.
 
 <cluster-l class="repolist__stats">
 
