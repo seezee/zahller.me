@@ -1,6 +1,6 @@
 {
   "name": "zahller.me",
-  "version": "1.0.57",
+  "version": "1.0.58",
   "description": "Personal site for Chris J. Zähller",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "markdown-it-attrs": "^5.0.1",
     "outdent": "^0.8.0",
     "prettier": "^3.9.6",
-    "terser": "^5.49.2"
+    "terser": "^5.50.0"
   },
   "browserslist": {
     "production": [
