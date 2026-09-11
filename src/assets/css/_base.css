@@ -643,6 +643,7 @@ icon-l {
   }
 
   &.bigger {
+
     align-items: safe center;
 
     & .icon {
